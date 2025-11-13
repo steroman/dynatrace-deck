@@ -118,6 +118,7 @@ transition: fade
 
 </v-clicks>
 </div>
+<!-- <img src="/assets/to-be-meme.png"> -->
 
 <div>
 <h3>If we do act</h3>
@@ -146,11 +147,7 @@ transition: fade
 
 <v-clicks>
 
-- Serve users
-- Align content to business goals
-- The product includes documentation
-- Be evidence-based
-- Influence people, processes, and technology
+**Serve users** by delivering **relevant and trustworthy** content that is **aligning content to business goals**, and treating it as a **key part of the product**, making decisions **based on evidence**, and **influencing** people, processes, and technology to **drive excellence at scale**.
 
 </v-clicks>
 
