@@ -30,38 +30,42 @@ layout: center
 transition: fade
 ---
 
-## 🧹 Due diligence
+<section class="relative">
 
-<div class="grid grid-cols-2 gap-4 mt-6 text-sm">
+  <!-- Fixed Step Nav (top-right corner) -->
+  <div class="step-nav absolute top-4 right-4"></div>
 
-<div class="border rounded-2xl p-4 shadow">
-✅ Solution requires a mix of change management, content operations, and product management
-</div>
+  <!-- Title -->
+  <h1 class="text-3xl font-bold mb-8">🧹 Due diligence</h1>
 
-<div class="border rounded-2xl p-4 shadow">
-✅ Openness to cross-functional collaboration
-</div>
+  <!-- Cards -->
+  <div class="flex flex-wrap gap-6 text-sm mt-6">
+    <div class="border rounded-2xl p-4 shadow flex-1 min-w-[250px]">
+      ✅ Solution requires a mix of change management, content operations, and product management
+    </div>
+    <div class="border rounded-2xl p-4 shadow flex-1 min-w-[250px]">
+      ✅ Openness to cross-functional collaboration
+    </div>
+    <div class="border rounded-2xl p-4 shadow flex-1 min-w-[250px]">
+      ✅ Leadership buy-in to treat documentation as a business asset, not a deliverable
+    </div>
+    <div class="border rounded-2xl p-4 shadow flex-1 min-w-[250px]">
+      ✅ Ability to influence processes and roadmap in teams involved in the solution
+    </div>
+    <div class="border rounded-2xl p-4 shadow flex-1 min-w-[250px]">
+      ✅ Team capacity to pilot and iterate before scaling across the organization
+    </div>
+  </div>
 
-<div class="border rounded-2xl p-4 shadow">
-✅ Leadership buy-in to treat documentation as a business asset, not a deliverable
-</div>
+</section>
 
-<div class="border rounded-2xl p-4 shadow">
-✅ Ability to influence processes and roadmap in teams involved in the solution
-</div>
-
-<div class="border rounded-2xl p-4 shadow">
-✅ Team capacity to pilot and iterate before scaling across the organization
-</div>
-
-</div>
-
-<!-- notes:
-
+<!-- Notes -->
+<!-- 
 Ok so, before we dive deeper there's some due diligence to do. Here are the assumptions I have made along the way. So please start from them to frame the scope of this proposal. Should one not hold, any level can be adapted: from strategy to execution.
 
-1. The strategy requires a mix of change management, content operations, and product management. In the real world, this would be handled by a larger team with cross-functional expertise.
+The strategy requires a mix of change management, content operations, and product management. In the real world, this would be handled by a larger team with cross-functional expertise.
 -->
+
 
 ---
 layout: center
@@ -112,9 +116,9 @@ transition: fade
 <h3>If we don't act</h3>
 <v-clicks>
 
-- 🧱 **Content debt grows** — too much to maintain, too little time  
-- 💔 **User trust erodes** — outdated or inconsistent information breaks confidence  
-- 💸 **Costs rise** — more support tickets, slower onboarding, less self-serve  
+- 🧱 <strong>Content debt grows</strong> — too much to maintain, too little time  
+- 💔 <strong>User trust erodes</strong> — outdated or inconsistent information breaks confidence  
+- 💸 <strong>Costs rise</strong> — more support tickets, slower onboarding, less self-serve  
 
 </v-clicks>
 </div>
@@ -124,9 +128,9 @@ transition: fade
 <h3>If we do act</h3>
 <v-clicks>
 
-- 🚀 **Knowledge becomes a growth engine**  
-- 🤝 **Users self-serve confidently** through up-to-date, relevant content  
-- 💡 **Docs drive activation and adoption**, amplifying business outcomes  
+- 🚀 <strong>Knowledge becomes a growth engine</strong>  
+- 🤝 <strong>Users self-serve confidently</strong> through up-to-date, relevant content  
+- 💡 <strong>Docs drive activation and adoption</strong>, amplifying business outcomes  
 
 </v-clicks>
 </div>
@@ -147,7 +151,7 @@ transition: fade
 
 <v-clicks>
 
-**Serve users** by delivering **relevant and trustworthy** content that is **aligning content to business goals**, and treating it as a **key part of the product**, making decisions **based on evidence**, and **influencing** people, processes, and technology to **drive excellence at scale**.
+<strong>Serve users</strong> by delivering <strong>relevant and trustworthy</strong> content that is <strong>aligning content to business goals</strong>, and treating it as a <strong>key part of the product</strong>, making decisions <strong>based on evidence</strong>, and <strong>influencing</strong> people, processes, and technology to <strong>drive excellence at scale</strong>.
 
 </v-clicks>
 
@@ -195,15 +199,17 @@ layout: center
 transition: fade
 ---
 
-<div class="flex justify-between mb-6">
-  <div class="rounded-full bg-blue-500 text-white w-8 h-8 flex items-center justify-center">1</div>
-  <div class="rounded-full bg-gray-300 text-gray-500 w-8 h-8 flex items-center justify-center">2</div>
-  <div class="rounded-full bg-gray-300 text-gray-500 w-8 h-8 flex items-center justify-center">3</div>
-  <div class="rounded-full bg-gray-300 text-gray-500 w-8 h-8 flex items-center justify-center">4</div>
-  <div class="rounded-full bg-gray-300 text-gray-500 w-8 h-8 flex items-center justify-center">5</div>
+<div class="step-nav mb-8">
+  <div class="flex justify-between w-full max-w-md mx-auto">
+    <div class="step active">1</div>
+    <div class="step">2</div>
+    <div class="step">3</div>
+    <div class="step">4</div>
+    <div class="step">5</div>
+  </div>
 </div>
 
-## 1️⃣ Build a cross-functional team
+## Build a cross-functional team
 
 <div class="grid grid-cols-2 gap-8 mt-6 text-center">
 
@@ -256,15 +262,17 @@ layout: center
 transition: fade
 ---
 
-<div class="flex justify-between mb-6">
-  <div class="rounded-full bg-gray-300 text-gray-500 w-8 h-8 flex items-center justify-center">1</div>
-  <div class="rounded-full bg-blue-500 text-white w-8 h-8 flex items-center justify-center">2</div>
-  <div class="rounded-full bg-gray-300 text-gray-500 w-8 h-8 flex items-center justify-center">3</div>
-  <div class="rounded-full bg-gray-300 text-gray-500 w-8 h-8 flex items-center justify-center">4</div>
-  <div class="rounded-full bg-gray-300 text-gray-500 w-8 h-8 flex items-center justify-center">5</div>
+<div class="step-nav mb-8">
+  <div class="flex justify-between w-full max-w-md mx-auto">
+    <div class="step">1</div>
+    <div class="step active">2</div>
+    <div class="step">3</div>
+    <div class="step">4</div>
+    <div class="step">5</div>
+  </div>
 </div>
 
-## 2️⃣ Map Content to the User Journey
+## Map content to the user journeys
 
 <div class="grid grid-cols-2 gap-8 mt-6 text-center">
 
@@ -295,22 +303,22 @@ transition: fade
 </div>
 
 <!-- notes:
-1. **Map Core Workflows**  
-   - Partner with UX Research, Design, and Product to chart **core user workflows**.  
-   - Cover stages from **awareness → advocacy → end of relationship**.  
-   - Focus on **how users actually interact with content**, not hypothetical touchpoints.
+1. <strong>Map Core Workflows</strong>  
+   - Partner with UX Research, Design, and Product to chart <strong>core user workflows</strong>.  
+   - Cover stages from <strong>awareness → advocacy → end of relationship</strong>.  
+   - Focus on <strong>how users actually interact with content</strong>, not hypothetical touchpoints.
 
-2. **Define Deliverables per Stage and Release Tier**  
-   - Identify the **content required** at each step of the journey.  
+2. <strong>Define Deliverables per Stage and Release Tier</strong>  
+   - Identify the <strong>content required</strong> at each step of the journey.  
    - Decide with Product which deliverables are produced or maintained for each release tier:  
-     - **Tier 1:** Full set of deliverables (PR, blog posts, newsletters, release notes, help center articles, changelog, troubleshooting guides, etc.)  
-     - **Tier 2:** Essential subset of deliverables.
+     - <strong>Tier 1:</strong> Full set of deliverables (PR, blog posts, newsletters, release notes, help center articles, changelog, troubleshooting guides, etc.)  
+     - <strong>Tier 2:</strong> Essential subset of deliverables.
 
-3. **Test Content in Context**  
-   - Validate content **within the workflow**, not as stand-alone assets, to ensure relevance and usability.
+3. <strong>Test Content in Context</strong>  
+   - Validate content <strong>within the workflow</strong>, not as stand-alone assets, to ensure relevance and usability.
 
-4. **Assess Each Increment**  
-   - Evaluate every new piece of content as a **delta from the current journey mapping**.  
+4. <strong>Assess Each Increment</strong>  
+   - Evaluate every new piece of content as a <strong>delta from the current journey mapping</strong>.  
    - This ensures continuous improvement and alignment with actual user needs.
 -->
 
@@ -319,15 +327,17 @@ layout: center
 transition: fade
 ---
 
-<div class="flex justify-between text-sm font-semibold mb-6">
-<span class="opacity-40">1️⃣ Build Team</span>
-<span class="opacity-40">2️⃣ Map Journey</span>
-<span class="text-blue-500">3️⃣ Measure</span>
-<span class="opacity-40">4️⃣ Process</span>
-<span class="opacity-40">5️⃣ Shift Left</span>
+<div class="step-nav mb-8">
+  <div class="flex justify-between w-full max-w-md mx-auto">
+    <div class="step">1</div>
+    <div class="step">2</div>
+    <div class="step active">3</div>
+    <div class="step">4</div>
+    <div class="step">5</div>
+  </div>
 </div>
 
-## 3️⃣ Measure what matters
+## Establish metrics for success
 
 <div class="grid grid-cols-3 gap-4 mt-6 text-xs">
 
@@ -378,35 +388,37 @@ layout: center
 transition: fade
 ---
 
-<div class="flex justify-between text-sm font-semibold mb-6">
-<span class="opacity-40">1️⃣ Build Team</span>
-<span class="opacity-40">2️⃣ Map Journey</span>
-<span class="opacity-40">3️⃣ Measure</span>
-<span class="text-blue-500">4️⃣ Process</span>
-<span class="opacity-40">5️⃣ Shift Left</span>
+<div class="step-nav mb-8">
+  <div class="flex justify-between w-full max-w-md mx-auto">
+    <div class="step">1</div>
+    <div class="step">2</div>
+    <div class="step">3</div>
+    <div class="step active">4</div>
+    <div class="step">5</div>
+  </div>
 </div>
 
-## 4️⃣ Define a Scalable Process
+## Define a process
 
 <div class="grid grid-cols-2 gap-4 mt-6 text-sm">
 
 <div class="border rounded-2xl p-4 shadow">
-🧱 **Tiering & Ownership**  
+🧱 <strong>Tiering & Ownership</strong>  
 Clear rules for what gets documented and who is accountable.
 </div>
 
 <div class="border rounded-2xl p-4 shadow">
-⚙️ **Automation & Triggers**  
+⚙️ <strong>Automation & Triggers</strong>  
 Content work auto-generated from roadmap changes and metadata.
 </div>
 
 <div class="border rounded-2xl p-4 shadow">
-🔄 **Lifecycle Governance**  
+🔄 <strong>Lifecycle Governance</strong>  
 Every product delta → content delta. Reduce staleness by design.
 </div>
 
 <div class="border rounded-2xl p-4 shadow">
-🚀 **Pilot → Learn → Scale**  
+🚀 <strong>Pilot → Learn → Scale</strong>  
 Validate in one product area and iterate before rolling out.
 </div>
 
@@ -437,35 +449,37 @@ layout: center
 transition: fade
 ---
 
-<div class="flex justify-between text-sm font-semibold mb-6">
-<span class="opacity-40">1️⃣ Build Team</span>
-<span class="opacity-40">2️⃣ Map Journey</span>
-<span class="opacity-40">3️⃣ Measure</span>
-<span class="opacity-40">4️⃣ Process</span>
-<span class="text-blue-500">5️⃣ Shift Left</span>
+<div class="step-nav mb-8">
+  <div class="flex justify-between w-full max-w-md mx-auto">
+    <div class="step">1</div>
+    <div class="step">2</div>
+    <div class="step">3</div>
+    <div class="step">4</div>
+    <div class="step active">5</div>
+  </div>
 </div>
 
-## 5️⃣ Shift Knowledge Left
+## Shift content left
 
 <div class="grid grid-cols-2 gap-4 mt-6 text-sm">
 
 <div class="border rounded-2xl p-4 shadow">
-⏱️ **Start content work earlier**  
+⏱️ <strong>Start content work earlier</strong>  
 Surface information needs before build begins.
 </div>
 
 <div class="border rounded-2xl p-4 shadow">
-📚 **Shared responsibility**  
+📚 <strong>Shared responsibility</strong>  
 Everyone contributes to knowledge, not just writers.
 </div>
 
 <div class="border rounded-2xl p-4 shadow">
-⚙️ **Standards + tooling enable contribution**  
+⚙️ <strong>Standards + tooling enable contribution</strong>  
 Templates, metadata, and processes reduce friction.
 </div>
 
 <div class="border rounded-2xl p-4 shadow col-span-2">
-🌱 **Culture change**  
+🌱 <strong>Culture change</strong>  
 Content becomes part of the product, not an afterthought.
 </div>
 
@@ -488,55 +502,47 @@ layout: center
 transition: fade
 ---
 
-## Adoption & Change Management
+## Next steps
 
 <div class="grid grid-cols-3 gap-4 mt-6 text-sm">
 
 <div class="border rounded-2xl p-4 shadow">
-🎓 Training & onboarding for contributors
+🎯 <strong>Define success</strong>  
+Shared goals, ownership, and measurable outcomes.
 </div>
 
 <div class="border rounded-2xl p-4 shadow">
-💬 Early pilot → gather advocates across teams
+🎓 <strong>Enable contributors</strong>  
+Training, onboarding, and lightweight standards.
 </div>
 
 <div class="border rounded-2xl p-4 shadow">
-📊 Transparent metrics dashboard to show progress
+🔍 <strong>Run a small pilot</strong>  
+One product area → map workflow → test governance.
+</div>
+
+<div class="border rounded-2xl p-4 shadow">
+📊 <strong>Build transparency</strong>  
+Metrics dashboard to show progress & signal impact.
+</div>
+
+<div class="border rounded-2xl p-4 shadow col-span-2">
+🚀 <strong>Learn → refine → scale</strong>  
+Review results after 3 months and expand with confidence.
 </div>
 
 </div>
 
 <!-- notes:
-Show that I’m thinking about adoption — behavior change, not just process design. 
+When we talk about next steps, the priority is to make this framework real in a way that’s simple, actionable, and low-friction.
+
+The first step is to define success. Before we do anything, we align on what “good” looks like: the outcomes we want to drive, who owns what, and the metrics that will tell us whether we’re moving in the right direction. This gives everyone the same north star.
+
+Next, we enable contributors. None of this works unless people feel equipped to participate. That means lightweight training, clear standards, and simple templates so teams know what’s expected and can contribute without friction. This is where the culture shift starts.
+
+Then we run a small pilot — just one product area. We map one end-to-end user workflow, apply the tiering and governance model, and test how the process holds up in real life. The goal is not perfection, but learning.
+
+To reinforce momentum, we make progress visible. A transparent metrics dashboard helps show early impact, build trust, and create advocates across teams.
+
+Finally, after three months, we review results, refine the model, and scale. This approach keeps the scope controlled, the risk low, and the learning high — and it ensures that when we expand, we do it with confidence and evidence, not assumptions.
 -->
-
----
-layout: center
-transition: fade
----
-
-## Next Steps
-
-<div class="grid grid-cols-2 gap-4 mt-6 text-sm">
-
-<div class="border rounded-2xl p-4 shadow">
-1️⃣ Form the **Content Council** pilot group  
-2️⃣ Map one end-to-end user workflow  
-3️⃣ Define ownership and success metrics  
-4️⃣ Review learnings and scale
-</div>
-
-<div class="border rounded-2xl p-4 shadow">
-🏁 Deliverables after 3 months:  
-- Aligned governance model  
-- Clear content lifecycle framework  
-- Measurable outcomes baseline
-</div>
-
-</div>
-
-<!-- notes:
-End with momentum: a concrete, achievable plan that signals ownership and readiness to execute.
--->
-
----
