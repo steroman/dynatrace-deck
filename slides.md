@@ -209,26 +209,26 @@ transition: fade
 
   <div class="p-6 border rounded-2xl shadow flex flex-col items-center">
     <div class="text-4xl">🤝</div>
-    <div class="mt-2 font-semibold">Shared Storytelling</div>
+    <div class="mt-2 font-semibold">Shared storytelling</div>
     <div class="mt-1 text-sm opacity-70">Ensure all functions tell the same narrative.</div>
   </div>
 
   <div class="p-6 border rounded-2xl shadow flex flex-col items-center">
     <div class="text-4xl">🏛️</div>
-    <div class="mt-2 font-semibold">Content Council</div>
+    <div class="mt-2 font-semibold">Content council</div>
     <div class="mt-1 text-sm opacity-70">A team owning the end-to-end content strategy.</div>
   </div>
 
   <div class="p-6 border rounded-2xl shadow flex flex-col items-center">
     <div class="text-4xl">🧩</div>
-    <div class="mt-2 font-semibold">Role Clarity</div>
+    <div class="mt-2 font-semibold">Role clarity</div>
     <div class="mt-1 text-sm opacity-70">Define responsibilities to avoid overlaps.</div>
   </div>
 
   <div class="p-6 border rounded-2xl shadow flex flex-col items-center">
     <div class="text-4xl">🔄</div>
-    <div class="mt-2 font-semibold">Continuous Feedback</div>
-    <div class="mt-1 text-sm opacity-70">Regularly review and iterate on content.</div>
+    <div class="mt-2 font-semibold">Continuous feedback</div>
+    <div class="mt-1 text-sm opacity-70">Regularly review and iterate on content solutions.</div>
   </div>
 
 </div>
@@ -327,41 +327,50 @@ transition: fade
 <span class="opacity-40">5️⃣ Shift Left</span>
 </div>
 
-## 3️⃣ Measure What Matters
+## 3️⃣ Measure what matters
 
 <div class="grid grid-cols-3 gap-4 mt-6 text-xs">
 
 <div class="border rounded-2xl p-3 shadow">
-<h4 class="font-bold mb-2 text-blue-600">Customer Success</h4>
+<h4 class="font-bold mb-2 text-blue-600">Customer outcomes</h4>
 <ul class="list-none space-y-1">
-<li>✅ Faster activation time</li>
-<li>✅ Task completion without support</li>
-<li>✅ Confidence in troubleshooting</li>
+<li>⚡ Faster time-to-value</li>
+<li>🚀 Increased task completion</li>
+<li>🧭 Decreased friction (errors, drop-offs, unnecessary step)</li>
 </ul>
 </div>
 
 <div class="border rounded-2xl p-3 shadow">
-<h4 class="font-bold mb-2 text-blue-600">Stakeholder Success</h4>
+<h4 class="font-bold mb-2 text-blue-600">Business impact</h4>
 <ul class="list-none space-y-1">
-<li>📉 Reduced back-and-forth with writers</li>
-<li>⚡ Shorter release-to-publish cycles</li>
-<li>🤝 Clear accountability & ownership</li>
+<li>📈 Feature discovery & adoption uplift</li>
+<li>💬 Case deflection (support, AI)</li>
+<li>🔧 Increased self-serve (troubleshooting, error recovery)</li>
+<li>🤖 Higher operational efficiency</li>
 </ul>
 </div>
 
 <div class="border rounded-2xl p-3 shadow">
-<h4 class="font-bold mb-2 text-blue-600">Business Success</h4>
+<h4 class="font-bold mb-2 text-blue-600">Operational efficiency</h4>
 <ul class="list-none space-y-1">
-<li>📈 Feature adoption uplift</li>
-<li>💬 Support ticket reduction</li>
-<li>💡 Increased content reuse & quality consistency</li>
+<li>📉 Decreased SME dependency</li>
+<li>⏱️ Shorter roadmap → publish timelines</li>
+<li>🤝 Standards adherence</li>
 </ul>
 </div>
 
 </div>
 
 <!-- notes:
-These are the KPIs I’ll track — clear evidence of impact across user, team, and business.
+Traditional content teams often measure success through engagement and clarity. These matter, but if we stop there, we miss the real reason content exists: to influence behavior and drive business outcomes. Users don’t want to “engage” with content — they want answers, they want to solve problems, and they want to move on with their day. So we need to measure content in terms of what it helps them accomplish.
+
+Once we have journey mapping in place, we can define clear behavioral goals for each stage. At awareness, users need to understand what a feature is and why it matters. At exploration, they need enough guidance to understand how it works. At activation, they need a clear path to success. And not every feature requires the same depth — and that’s fine. What matters is that we assess these stages systematically and build loops to learn and iterate.
+
+On the user side, we measure things like activation time, task completion without support, and troubleshooting confidence. These tell us whether content is helping users perform the jobs-to-be-done and reduce friction.
+
+On the business side, we focus on metrics like feature discovery and adoption uplift, and reductions in support tickets, especially “how do I…” questions. If the organization uses AI agents trained on the docs, we can also measure deflection or containment — essentially, whether the content is strong enough for the AI to answer without escalating to support.
+
+Finally, on the operational side, we continue tracking how efficiently we work: time from roadmap changes to published content, review cycles, and how well teams follow content standards. These operational metrics help us identify friction and improve the content delivery system itself — something we’ll explore more in the next section.
 -->
 
 ---
@@ -382,21 +391,45 @@ transition: fade
 <div class="grid grid-cols-2 gap-4 mt-6 text-sm">
 
 <div class="border rounded-2xl p-4 shadow">
-🧱 Define clear **ownership and tiering** — clarity on what gets documented and by whom.
+🧱 **Tiering & Ownership**  
+Clear rules for what gets documented and who is accountable.
 </div>
 
 <div class="border rounded-2xl p-4 shadow">
-🧩 Embed documentation in **Definition of Ready / Done** to align content with product milestones.
+⚙️ **Automation & Triggers**  
+Content work auto-generated from roadmap changes and metadata.
 </div>
 
-<div class="border rounded-2xl p-4 shadow col-span-2">
-🚀 Pilot the model with one product area → gather feedback → iterate → scale.
+<div class="border rounded-2xl p-4 shadow">
+🔄 **Lifecycle Governance**  
+Every product delta → content delta. Reduce staleness by design.
+</div>
+
+<div class="border rounded-2xl p-4 shadow">
+🚀 **Pilot → Learn → Scale**  
+Validate in one product area and iterate before rolling out.
 </div>
 
 </div>
 
-<!-- notes:
-The goal here is predictability and scalability. Once the process is proven, it becomes self-sustaining.
+<!--
+When we talk about process, the goal isn’t bureaucracy — it’s scalability, predictability, and the ability to measure what matters. Standards don't only improve efficiency and consistency, but they also allow to measure deviations from them. A scalable process gives us that clarity.
+
+There isn't one single “content process.” Instead, it’s a combination of systems working together.
+
+The first system is automation: using journey mapping and content tiering to automatically identify what needs to be produced at each product increment. If something enters the roadmap or changes state, that should trigger content work. With the right metadata and forms around work items, writers should receive the information they need upfront rather than having to chase PMs and SMEs for context. This eliminates information-hunting and creates a predictable flow.
+
+But the organic interactions matter too — hallway conversations, early signals from design reviews, Slack threads, support insights. These informal pathways reveal real user needs. A good governance model accounts for both the automated and the organic workstreams and provides tools to track them and turn them into actionable and measurable tasks.
+
+Next, we think about content lifecycle. I prefer a “git-like” model: every change to the product creates a delta in content. That approach naturally reduces staleness because the content system mirrors the product system. I've seen teams rely on periodic staleness checks — for example, flagging articles that haven’t been touched in six months. That can work, but it often incentivizes quick edits rather than meaningful reevaluation. A delta-based model prevents this by design. You can even go further with ideas like docs-as-tests, where documentation is backed by automated end-to-end tests — if the tests fail, the content is outdated.
+
+Ownership and accountability play a huge role. Writers need influence over the Definition of Ready and Definition of Done to make sure content requirements are baked into product milestones, not treated as an afterthought.
+
+A scalable process also means considering all workstreams: reactive updates, roadmap-driven projects, experiments, maintenance, and innovation. And it means balancing day-to-day delivery with long-term strategic work.
+
+Finally, process is how we turn north-star outcomes into actionable work. Whether you use OKRs, GIST, RICE, or an evidence-scoring model, the important thing is building a culture of experimentation and frequent reassessment. We should routinely evaluate how content performs: which articles are succeeding, which are failing, and why. This constant loop of evidence and iteration is how the system becomes self-improving.
+
+The end goal isn’t a rigid workflow — it’s a living, adaptive system that mirrors the product, scales with the organization, and improves based on evidence.
 -->
 
 ---
@@ -417,21 +450,37 @@ transition: fade
 <div class="grid grid-cols-2 gap-4 mt-6 text-sm">
 
 <div class="border rounded-2xl p-4 shadow">
-⏱️ Identify information needs **early** in development cycles to reduce downstream churn.
+⏱️ **Start content work earlier**  
+Surface information needs before build begins.
 </div>
 
 <div class="border rounded-2xl p-4 shadow">
-🤝 Empower all contributors to own and maintain knowledge through standards and templates.
+📚 **Shared responsibility**  
+Everyone contributes to knowledge, not just writers.
+</div>
+
+<div class="border rounded-2xl p-4 shadow">
+⚙️ **Standards + tooling enable contribution**  
+Templates, metadata, and processes reduce friction.
 </div>
 
 <div class="border rounded-2xl p-4 shadow col-span-2">
-🌱 Fosters shared accountability → better product learning, fewer surprises post-launch.
+🌱 **Culture change**  
+Content becomes part of the product, not an afterthought.
 </div>
 
 </div>
 
 <!-- notes:
-This is the cultural shift — knowledge work starts early, and everyone contributes to the narrative.
+Shifting content left is ultimately a culture change. The term comes from software testing, where teams started moving tests earlier in the development cycle to catch issues sooner, reduce costs, and improve quality. We're applying the same principle to knowledge work.
+
+Everything we’ve talked about so far — cross-functional collaboration, journey mapping, behavior-based measurement, automation, governance — all of it adds up to shifting knowledge earlier in the lifecycle. When content is considered only at the end, we create churn, we create rework, and we limit our ability to influence the product experience. When content is considered from the beginning, it becomes part of how the product is designed, validated, and delivered.
+
+Shifting left means that information needs are surfaced early, before development starts. It means that gathering inputs isn’t an ad-hoc scramble at the end, but a natural part of how teams collaborate. It means that contributors across product, design, engineering, and support understand the role they play in maintaining and evolving the knowledge base. Writers stop being information hunters and become strategic partners.
+
+This shift only works when the system supports it: clear standards, repeatable templates, metadata that captures the right information, and tooling that makes it easy for anyone to contribute. When those pieces are in place, ownership becomes shared, content quality improves, and teams make better decisions because the narrative is present from the beginning.
+
+So shifting content left isn’t a single initiative — it’s the natural outcome of building the right team, mapping the journey, measuring the right things, and creating a scalable, evidence-based process. It’s how content becomes a true part of the product, rather than an afterthought.
 -->
 
 ---

@@ -57,6 +57,7 @@ Solutions:
 - Reason in workflows
   - Reasoning in workflows also allows to assess divergence from them: errors, different paths, shortcuts, limitations, business logic, etc
   - KTLO?
+- Checklists
 
 ## Governance
 
