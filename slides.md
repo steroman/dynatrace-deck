@@ -7,6 +7,7 @@ class: text-center
 ---
 
 # A holistic approach<br>to the learning journey
+
 ### Turning Dynatrace's content into a strategic asset
 
 ---
@@ -403,17 +404,17 @@ transition: fade
 <div class="grid grid-cols-2 gap-4 mt-6 text-sm">
 
 <div class="border rounded-2xl p-4 shadow">
-🧱 <strong>Tiering & Ownership</strong>  
+🧱 <strong>Tiering & ownership</strong>  
 Clear rules for what gets documented and who is accountable.
 </div>
 
 <div class="border rounded-2xl p-4 shadow">
-⚙️ <strong>Automation & Triggers</strong>  
+⚙️ <strong>Automation & triggers</strong>  
 Content work auto-generated from roadmap changes and metadata.
 </div>
 
 <div class="border rounded-2xl p-4 shadow">
-🔄 <strong>Lifecycle Governance</strong>  
+🔄 <strong>Lifecycle governance</strong>  
 Every product delta → content delta. Reduce staleness by design.
 </div>
 
@@ -533,7 +534,7 @@ Review results after 3 months and expand with confidence.
 
 </div>
 
-<!-- notes:
+<!--
 When we talk about next steps, the priority is to make this framework real in a way that’s simple, actionable, and low-friction.
 
 The first step is to define success. Before we do anything, we align on what “good” looks like: the outcomes we want to drive, who owns what, and the metrics that will tell us whether we’re moving in the right direction. This gives everyone the same north star.
@@ -545,4 +546,209 @@ Then we run a small pilot — just one product area. We map one end-to-end user 
 To reinforce momentum, we make progress visible. A transparent metrics dashboard helps show early impact, build trust, and create advocates across teams.
 
 Finally, after three months, we review results, refine the model, and scale. This approach keeps the scope controlled, the risk low, and the learning high — and it ensures that when we expand, we do it with confidence and evidence, not assumptions.
+-->
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Part 2  
+## Modernizing the content lifecycle
+
+<!-- notes:
+Soft transition. Signal the shift to a new lens: operational rigor, systems thinking, modern lifecycle.
+-->
+---
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# The problem  
+### A lifecycle that can’t keep up
+
+<div class="opacity-60 text-base mt-6">
+  Writers are overloaded.  
+  Content goes stale.  
+  Users lose trust.  
+  LLMs amplify inaccuracies.  
+</div>
+
+<!-- notes:
+Hit the core pain quickly. This isn’t about writers failing — it’s a structural, operational bottleneck.
+-->
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Success
+
+## User
+- Less friction
+- Faster task completion
+- Higher confidence
+
+## Business
+- Case deflection (support + LLM)
+- Higher adoption of core workflows
+- Reduced risk from stale or wrong docs
+
+## Operations
+
+- Writers spend more time writing
+- Fewer disruptions
+- Staleness reduced at the source
+
+<!-- notes:
+-->
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Reframe  
+### Lifecycle ≠ maintenance  
+### It’s an operational system
+
+<!-- notes:
+Introduce the systems-thinking shift:
+- Inputs → throughput → outputs
+- Today’s failures come from poor inputs and noisy, unstructured workstreams.
+This framing unlocks the logic of every following slide.
+-->
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Diagnose the system  
+### People • Process • Technology
+
+<!-- notes:
+People → Time sinks, interruptions, information hunting.  
+Process → Intake → prioritization → creation → review → governance → deprecation.  
+Technology → Missing automation, metadata, templates, tooling.  
+Goal: surface friction + operational bottlenecks, not run a months-long needs analysis.
+-->
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Create clarity  
+### Centralize & clean the workstream
+
+<!-- notes:
+Key moves:
+- Single intake channel (Slack workflow + metadata).
+- First-line triage to shield writers from noise.
+- One board for all workstreams.
+- Tag by type (roadmap, reactive, bugs, maintenance, experiments).
+Outcome: Writers write. Noise is filtered. Work becomes visible and manageable.
+-->
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Prioritize with intention  
+### Two different engines
+
+<!-- notes:
+Improving the status quo (strategic):
+North Star → OKRs → GIST → Confidence → RICE  
+→ Produces a ranked backlog of high-leverage improvements.
+
+Maintaining the status quo (operational):
+Tiering model:
+- Tier 0 = critical workflows (always yes)
+- Tier 1 = strategic features with real user impact (usually yes)
+- Tier 2 = low-impact (only if capacity)
+
+This solves the “everything is important” chaos.
+-->
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# De-risk the transition  
+### Quality • Productivity • Alignment
+
+<!-- notes:
+Quality: templates, contribution guidelines, Vale rules, auto-fixes, governance checkpoints.  
+Productivity: intake automation, RASCI clarity, time allocation, estimation improving via retros.  
+Alignment: onboarding contributors, docs=product training, roadmap-driven deprecation.
+
+Purpose: scale without regression.
+-->
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# A modern lifecycle  
+### From chaos → system
+
+<!-- notes:
+What the modern lifecycle includes:
+- Metadata-driven intake
+- Automated triage
+- Unified workstreams
+- Workflow-based authoring
+- Governance loops
+- Tooling (Vale/remark rules, scripts, templates, DWK/RAG)
+- Evidence dashboards
+
+Not a workflow. A system.
+-->
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Start small  
+### Pilot → learn → scale
+
+<!-- notes:
+The pilot:
+1. Select one product area.  
+2. Improve intake + triage.  
+3. Apply tiering + prioritization.  
+4. Add lightweight automation.  
+5. Measure → adjust.  
+6. Expand intentionally.
+
+Goal: internal teams say “we want more of this.”
+-->
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# A modern lifecycle  
+## The operational engine behind clarity and trust
+
+<!-- notes:
+Final punchline. This ties back to both product and organizational value. End strong and concise.
 -->
