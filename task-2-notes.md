@@ -84,6 +84,7 @@ THE GOAL ISN'T FOR PEOPLE TO SPEND MORE TIME ON DOCS
 - performance (visits, time spent (it's not equal for each content type. e.g. how-tos need more time, reference needs less), bounce rates)
 - Usability
   - Readability score (?)
+  - Chunking detector
   - Comprehension tests
 - User feedback (do customers find it useful)
 - AI Chatbots:

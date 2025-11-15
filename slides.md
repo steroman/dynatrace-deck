@@ -1,13 +1,17 @@
 ---
-theme: default
-title: A holistic approach to the learning journey
+theme: ./theme
 layout: cover
-transition: fade
-class: text-center
+title: A holistic approach to the learning journey
+subtitle: Turning Dynatrace's content into a strategic asset
 ---
 
-# A holistic approach<br>to the learning journey
-### Turning Dynatrace's content into a strategic asset
+<template #logo>
+  <img
+    src="./assets/logo/Dynatrace_Logo_color_negative_vertical.svg"
+    class="w-20"
+  >
+</template>
+
 
 <!-- notes:
 Hello everyone — for Task 1, I want to walk you through how we can elevate documentation 
@@ -21,13 +25,15 @@ predictable, and behavior-shaping learning experience.
 Let me show you what “great” looks like from the user’s perspective.
 -->
 ---
-layout: intro
-transition: fade
+theme: ./theme
+layout: default
+# title: Voice of the customer
 ---
 
 <Quote author="A Dynatrace customer">
-  It’s like the folks at Dynatrace can read my mind.  
-  They know what information I need, when I need it, and the best format to provide it to me.
+  It's like the folks at Dynatrace can read my mind.  
+  They know what information I need, when I need it,  
+  and the best way to provide it to me.
 </Quote>
 <!-- 
 > “It's like the folk at Dynatrace can read my mind.
@@ -47,22 +53,18 @@ When they don’t, the user feels lost.
 So the question is: what stands between us and being this kind of company every day?
 -->
 ---
-layout: dynatrace
-transition: fade
+theme: ./theme
+layout: default
 title: 🧹 Due diligence
 ---
 
-<section class="relative mt-6">
-
-<div class="flex flex-wrap gap-6 text-sm mt-6">
-  <div class="border rounded-2xl p-4 shadow flex-1 min-w-[250px]">✅ Multi-disciplinary approach</div>
-  <div class="border rounded-2xl p-4 shadow flex-1 min-w-[250px]">✅ Openness to cross-functional collaboration</div>
-  <div class="border rounded-2xl p-4 shadow flex-1 min-w-[250px]">✅ Leadership buy-in for docs as a business asset</div>
-  <div class="border rounded-2xl p-4 shadow flex-1 min-w-[250px]">✅ Ability to influence</div>
-  <div class="border rounded-2xl p-4 shadow flex-1 min-w-[250px]">✅ Evidence-based experimentation</div>
-</div>
-
-</section>
+<CardStack>
+  <Card>Multi-disciplinary approach</Card>
+  <Card>Openness to collaboration</Card>
+  <Card>Leadership buy-in for docs as a business asset</Card>
+  <Card>Ability to influence</Card>
+  <Card>Evidence-based experimentation</Card>
+</CardStack>
 
 <!-- notes:
 Before proposing a strategy, it’s important to be explicit about the assumptions behind it. 
@@ -77,32 +79,30 @@ Finally, this model depends on a willingness to collaborate and make decisions b
 If any of these assumptions don’t hold, the strategy can still work — but we’d adapt the scope and pacing.
 -->
 ---
-layout: dynatrace
-transition: fade
+theme: ./theme
+layout: twocols
 title: Current state
+leftTitle: User perspective
+rightTitle: Org perspective
 ---
 
-<div class="grid grid-cols-2 gap-8 mt-6 text-sm">
+<template #left>
+  <ul>
+    <li>🔍 Hard to discover the right information</li>
+    <li>🤝 Unclear or inconsistent content</li>
+    <li>📉 Reliance on support to complete tasks</li>
+  </ul>
+</template>
 
-<div class="border rounded-2xl p-4 shadow">
-<h4 class="text-lg font-bold mb-2">User perspective</h4>
-<ul class="list-none space-y-2">
-<li>🔍 Hard to discover the right information</li>
-<li>🤝 Unclear or inconsistent content</li>
-<li>📉 Reliance on support to complete tasks</li>
-</ul>
-</div>
+<template #right>
+  <ul>
+    <li>🛢️ No narrative continuity across team</li>
+    <li>⚙️ Content and business goals misaligned</li>
+    <li>📊 More cases or drop-off</li>
+    <li>⬇️ Low feature discovery</li>
+  </ul>
+</template>
 
-<div class="border rounded-2xl p-4 shadow">
-<h4 class="text-lg font-bold mb-2">Organization perspective</h4>
-<ul class="list-none space-y-2">
-<li>🛢️ No narrative continuity across teams</li>
-<li>⚙️ Content disconnected from business needs</li>
-<li>📊 Collaboration gaps across functions</li>
-</ul>
-</div>
-
-</div>
 
 <!-- notes:
 Users often struggle to find what they need, or they find information that doesn’t fully match 
@@ -116,32 +116,34 @@ This dual perspective — user pain and organizational misalignment — creates 
 for friction, support escalations, and inconsistent learning experiences.
 -->
 ---
-layout: dynatrace
+theme: ./theme
+layout: twocols
 transition: fade
-title: Opportunities
+title: Possible futures
+leftTitle: No action
+rightTitle: Action
 ---
 
-<div class="grid grid-cols-2 gap-8 mt-6 text-base">
+  <template #left>
+    <!-- <h3 class="text-2xl font-semibold mb-4">If we don't act</h3> -->
+    <v-clicks>
+      <ul class="space-y-2">
+        <li>🧱 Growing content debt</li>
+        <li>💔 Declining user trust</li>
+        <li>💸 Rising support costs</li>
+      </ul>
+    </v-clicks>
+  </template>
 
-<div>
-<h3>If we don't act</h3>
-<v-clicks>
-- 🧱 Growing content debt  
-- 💔 Declining user trust  
-- 💸 Rising support costs  
-</v-clicks>
-</div>
-
-<div>
-<h3>If we do act</h3>
-<v-clicks>
-- 🚀 Knowledge accelerates product growth  
-- 🤝 Users self-serve confidently  
-- 💡 Documentation amplifies adoption  
-</v-clicks>
-</div>
-
-</div>
+  <template #right>
+    <v-clicks>
+      <ul class="space-y-2">
+        <li>🚀 Knowledge accelerates product growth</li>
+        <li>🤝 Users self-serve confidently</li>
+        <li>💡 Documentation amplifies adoption</li>
+      </ul>
+    </v-clicks>
+  </template>
 
 <!-- notes:
 This slide creates the tension and the opportunity.
@@ -158,6 +160,7 @@ It also empowers users to self-serve more confidently — which is essential for
 The contrast between these two futures shows why a new approach is worth investing in.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 ---
@@ -181,6 +184,7 @@ Achieving this means aligning content with business goals, grounding decisions i
 and influencing the people, processes, and technology involved in shaping the user experience.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 ---
@@ -207,6 +211,7 @@ Process ensures consistency and scalability.
 And shifting knowledge left ensures content work starts early and is never an afterthought.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 ---
@@ -247,6 +252,7 @@ and help spot content needs much earlier in the product lifecycle.
 This structure creates shared ownership and prevents misalignment long before it reaches users.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 ---
@@ -285,6 +291,7 @@ Finally, each new increment is assessed as a delta to the journey map.
 This ensures content evolves in sync with the product and always supports behavior.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 ---
@@ -348,6 +355,7 @@ and how consistently we follow standards.
 These metrics create feedback loops that guide improvement.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 ---
@@ -385,6 +393,7 @@ And because every organization is different, we start with a small pilot,
 test the process in one product area, and refine before scaling.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 ---
@@ -420,6 +429,7 @@ Over time, this creates a cultural shift: knowledge becomes embedded in how the 
 not something added afterward.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 ---
@@ -448,6 +458,7 @@ that makes this strategy sustainable.
 -->
 
 ---
+theme: ./theme
 layout: center
 transition: fade
 class: text-center
@@ -465,6 +476,7 @@ So in this section, I’ll walk you through a practical path for evaluating the 
 understanding where friction lives, and transitioning to a system that scales with the product.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 class: text-center
@@ -482,6 +494,7 @@ A modern lifecycle gives us predictable flow, strong quality standards,
 and content that keeps up with the pace of change.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 class: text-center
@@ -503,6 +516,7 @@ And sustainability is essential: if workloads or expectations aren’t balanced,
 These assumptions shape the whole approach.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 class: text-center
@@ -527,6 +541,7 @@ For PMs, it’s clarity: knowing exactly what’s expected and how to provide th
 These perspectives reflect the cultural and operational shift we want to create.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 class: text-center
@@ -548,6 +563,7 @@ They form a practical, realistic path toward a modern lifecycle—from evaluatio
 to clarity, to operational strength, to measurement, and finally to a safe, small-scale rollout.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 class: text-center
@@ -567,6 +583,7 @@ A key part of this step is centralizing all incoming work into a single board so
 Evaluating the system reveals where friction lives and where improvements will have the highest impact.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 class: text-center
@@ -584,6 +601,7 @@ and ensure that what we maintain aligns with user needs and with the workflows d
 This step sets the stage for meaningful prioritization.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 class: text-center
@@ -601,6 +619,7 @@ Tier 0 always gets delivered, Tier 1 usually does, and Tier 2 only if capacity a
 This creates clarity for writers and PMs and helps everyone understand why some work moves forward and some doesn’t.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 class: text-center
@@ -617,6 +636,7 @@ Leadership alignment is key—PMs and engineers should understand that experimen
 Training contributors on workflows and templates also reduces friction and speeds up delivery.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 class: text-center
@@ -635,6 +655,7 @@ Governance ties everything together: routine QA, adherence checks, and roadmap-d
 Strengthening operations reduces rework and creates a healthier, more predictable content system.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 class: text-center
@@ -652,6 +673,7 @@ Measuring across these three lenses helps us decide what to improve, what to ret
 and where to invest next so the system keeps evolving in the right direction.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 class: text-center
@@ -668,6 +690,7 @@ A good pilot creates pull rather than push—teams see the improvement and want 
 This approach builds trust and minimizes risk during the transition.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 class: text-center
@@ -686,6 +709,7 @@ content reuse strategies, and RAG-based authoring assistance to improve consiste
 These ideas can spark future conversations after the lifecycle evaluation begins.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 class: text-center
@@ -703,6 +727,7 @@ That’s why we focus on building strong processes first.
 Once those are in place, AI becomes a powerful multiplier that makes teams faster and more accurate.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 class: text-center
@@ -720,6 +745,7 @@ modern documentation tooling, and collaborative models for treating docs as a pr
 Happy to share any of these references afterward.
 -->
 ---
+theme: ./theme
 layout: center
 transition: fade
 class: text-center
