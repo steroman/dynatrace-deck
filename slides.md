@@ -185,21 +185,18 @@ and influencing the people, processes, and technology involved in shaping the us
 -->
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
+title: Solution overview
 ---
 
-## Solution overview
-
-<div class="grid grid-cols-5 gap-2 mt-6 text-xs">
-
-<div class="border rounded-2xl p-3 shadow text-center"><strong>1️⃣ Cross-functional team</strong></div>
-<div class="border rounded-2xl p-3 shadow text-center"><strong>2️⃣ Map user journeys</strong></div>
-<div class="border rounded-2xl p-3 shadow text-center"><strong>3️⃣ Measure what matters</strong></div>
-<div class="border rounded-2xl p-3 shadow text-center"><strong>4️⃣ Define process</strong></div>
-<div class="border rounded-2xl p-3 shadow text-center"><strong>5️⃣ Shift knowledge left</strong></div>
-
-</div>
+<DTTimeline :items="[
+  'Cross-functional team',
+  'Map user journeys',
+  'Measure what matters',
+  'Define process',
+  'Shift knowledge left'
+]" />
 
 <!-- notes:
 These five pillars form the backbone of a holistic documentation strategy.
