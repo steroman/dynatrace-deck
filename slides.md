@@ -23,7 +23,6 @@ Let me show you what “great” looks like from the user’s perspective.
 ---
 layout: intro
 transition: fade
-# class: text-center
 ---
 
 <Quote author="A Dynatrace customer">
@@ -48,11 +47,10 @@ When they don’t, the user feels lost.
 So the question is: what stands between us and being this kind of company every day?
 -->
 ---
-layout: intro
+layout: dynatrace
 transition: fade
+title: 🧹 Due diligence
 ---
-
-# 🧹 Due diligence
 
 <section class="relative mt-6">
 
@@ -79,11 +77,10 @@ Finally, this model depends on a willingness to collaborate and make decisions b
 If any of these assumptions don’t hold, the strategy can still work — but we’d adapt the scope and pacing.
 -->
 ---
-layout: center
+layout: dynatrace
 transition: fade
+title: Current state
 ---
-
-## Current state
 
 <div class="grid grid-cols-2 gap-8 mt-6 text-sm">
 
@@ -119,11 +116,10 @@ This dual perspective — user pain and organizational misalignment — creates 
 for friction, support escalations, and inconsistent learning experiences.
 -->
 ---
-layout: center
+layout: dynatrace
 transition: fade
+title: Opportunities
 ---
-
-## Opportunities
 
 <div class="grid grid-cols-2 gap-8 mt-6 text-base">
 
