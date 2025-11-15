@@ -557,7 +557,14 @@ class: text-center
 ## Modernizing the content lifecycle
 
 <!-- notes:
-Soft transition. Signal the shift to a new lens: operational rigor, systems thinking, modern lifecycle.
+In Task 1 we explored a strategic and user-centered approach to documentation. 
+Now, Task 2 zooms into the operational backbone that makes all of that possible: 
+a modern, scalable content lifecycle.
+The problem we’re addressing is that writers can’t keep up with the pace of product change. 
+Content becomes stale, users lose trust, support carries unnecessary load, and LLM-powered features 
+start returning outdated or misleading information.
+So in this section, I’ll walk you through how I would evaluate the current lifecycle, identify opportunities, 
+and define a practical but powerful transition plan. 
 -->
 ---
 
@@ -567,19 +574,25 @@ transition: fade
 class: text-center
 ---
 
-# The problem  
-### A lifecycle that can’t keep up
-
-<div class="opacity-60 text-base mt-6">
-  Writers are overloaded.  
-  Content goes stale.  
-  Users lose trust.  
-  LLMs amplify inaccuracies.  
-</div>
+# Mission  
+## Velocity and quality at scale
 
 <!-- notes:
-Hit the core pain quickly. This isn’t about writers failing — it’s a structural, operational bottleneck.
+The mission behind modernizing the lifecycle is not simply “fix documentation.”
+It’s to build a system that simultaneously delivers velocity and quality — sustainably.
+
+In an ideal world, writers spend most of their time writing. 
+But today, much of their time gets absorbed by chasing inputs, 
+answering ad-hoc questions, compensating for unclear processes, or filling gaps left upstream.
+
+A modern lifecycle reduces friction at every stage. 
+It protects the focus of writers, gives PMs clarity about what’s expected from them, 
+and ensures documentation keeps up with product velocity.
+
+Everything in this proposal ladders up to this mission: 
+creating a system that enables high-quality content, fast, and without burnout.
 -->
+---
 
 ---
 layout: center
@@ -587,42 +600,31 @@ transition: fade
 class: text-center
 ---
 
-# Success
+# Our operating assumptions
 
-## User
-- Less friction
-- Faster task completion
-- Higher confidence
-
-## Business
-- Case deflection (support + LLM)
-- Higher adoption of core workflows
-- Reduced risk from stale or wrong docs
-
-## Operations
-
-- Writers spend more time writing
-- Fewer disruptions
-- Staleness reduced at the source
+**Velocity =** less friction · better tooling · solid processes  
+**Quality =** clarity · relevance · governance · strong inputs  
+**Scalability =** repeatable standards · automation · shared ownership  
+**Sustainability =** balanced workloads · clear roles · predictable flow
 
 <!-- notes:
+These are the assumptions that guide every decision in the lifecycle.
+
+Velocity isn’t created by pushing people harder — it’s created by removing friction, 
+reducing noise, and giving teams the right tooling and clear processes.
+
+Quality depends on good inputs: clear context, accurate information, and well-defined roles. 
+Strong governance ensures quality doesn’t degrade over time.
+
+Scalability comes from standardization: templates, guidelines, automation, and reuse. 
+We can’t scale through heroics; we scale through systems.
+
+And sustainability is crucial. If workloads aren’t balanced, or roles aren’t clear, 
+the entire lifecycle breaks under pressure.
+
+These assumptions shape everything I recommend next.
 -->
 ---
-layout: center
-transition: fade
-class: text-center
----
-
-# Reframe  
-### Lifecycle ≠ maintenance  
-### It’s an operational system
-
-<!-- notes:
-Introduce the systems-thinking shift:
-- Inputs → throughput → outputs
-- Today’s failures come from poor inputs and noisy, unstructured workstreams.
-This framing unlocks the logic of every following slide.
--->
 
 ---
 layout: center
@@ -630,15 +632,33 @@ transition: fade
 class: text-center
 ---
 
-# Diagnose the system  
-### People • Process • Technology
+# What success looks like
+
+> “Documentation is predictable, scalable, and aligned with business outcomes.”  
+<small>— Leadership</small>
+
+> “I finally spend most of my time writing.”  
+<small>— Writer</small>
+
+> “I know exactly what’s expected of me and how to contribute.”  
+<small>— PM</small>
 
 <!-- notes:
-People → Time sinks, interruptions, information hunting.  
-Process → Intake → prioritization → creation → review → governance → deprecation.  
-Technology → Missing automation, metadata, templates, tooling.  
-Goal: surface friction + operational bottlenecks, not run a months-long needs analysis.
+Here’s what success looks like once the lifecycle is modernized.
+
+Leadership feels confident: documentation becomes predictable, scalable, 
+and aligned with what the business needs — not just a downstream afterthought.
+
+Writers feel protected: they finally spend most of their time writing, 
+instead of fighting noise or unclear expectations.
+
+And PMs feel empowered: they know exactly what the docs team needs, 
+and they know how to contribute effectively without guesswork.
+
+These quotes represent the cultural shift we aim to create — 
+and they define our target state.
 -->
+---
 
 ---
 layout: center
@@ -646,17 +666,31 @@ transition: fade
 class: text-center
 ---
 
-# Create clarity  
-### Centralize & clean the workstream
+# The path forward
+
+**1. Evaluate the system**  
+**2. Audit scope**  
+**3. Prioritize what matters**  
+**4. Allocate time deliberately**  
+**5. Strengthen operations**  
+**6. Measure performance**  
+**7. Start small**
 
 <!-- notes:
-Key moves:
-- Single intake channel (Slack workflow + metadata).
-- First-line triage to shield writers from noise.
-- One board for all workstreams.
-- Tag by type (roadmap, reactive, bugs, maintenance, experiments).
-Outcome: Writers write. Noise is filtered. Work becomes visible and manageable.
+Here’s the roadmap for how we get from where we are now 
+to a modern content lifecycle.
+
+We start by evaluating how work flows today. 
+Then we audit the scope of what we actually produce. 
+We bring clarity by introducing a prioritization model. 
+We allocate time deliberately so writers can balance feature work and improvements.
+We strengthen the operational backbone.
+We measure performance so decisions become evidence-based.
+And finally, we start small — test, refine, and scale intentionally.
+
+I'll walk through each of these steps.
 -->
+---
 
 ---
 layout: center
@@ -664,60 +698,36 @@ transition: fade
 class: text-center
 ---
 
-# Prioritize with intention  
-### Two different engines
+# Step 1  
+## Evaluate the system
 
 <!-- notes:
-Improving the status quo (strategic):
-North Star → OKRs → GIST → Confidence → RICE  
-→ Produces a ranked backlog of high-leverage improvements.
+The first step is to evaluate the system — not with a huge needs assessment, 
+but by understanding how work really flows.
 
-Maintaining the status quo (operational):
-Tiering model:
-- Tier 0 = critical workflows (always yes)
-- Tier 1 = strategic features with real user impact (usually yes)
-- Tier 2 = low-impact (only if capacity)
+I start with people: How much time do writers spend writing versus gathering information, 
+answering Slack messages, or interpreting vague requests? 
+Where do interruptions happen? What pulls them off-track?
 
-This solves the “everything is important” chaos.
+Then process: What is the true workflow from feature planning to publishing? 
+Where are handoffs unclear? How many parallel workstreams are competing for attention? 
+Where does information get lost?
+
+Technology: Do we have templates, metadata, automation, or linting 
+that reduce rework and prevent errors? 
+Where are writers compensating for missing tooling?
+
+A crucial part of this step is centralizing all incoming work into a single board. 
+Right now, work likely comes through Slack, Jira, ad-hoc conversations, support, and so on. 
+When intake is fragmented, prioritization becomes impossible.
+
+Finally, I analyze where content breaks the user journey. 
+Where do users get lost? Where do support tickets spike? 
+Those pain points tell us where the lifecycle is failing to deliver.
+
+This evaluation creates the foundation for everything that follows.
 -->
 ---
-layout: center
-transition: fade
-class: text-center
----
-
-# De-risk the transition  
-### Quality • Productivity • Alignment
-
-<!-- notes:
-Quality: templates, contribution guidelines, Vale rules, auto-fixes, governance checkpoints.  
-Productivity: intake automation, RASCI clarity, time allocation, estimation improving via retros.  
-Alignment: onboarding contributors, docs=product training, roadmap-driven deprecation.
-
-Purpose: scale without regression.
--->
-
----
-layout: center
-transition: fade
-class: text-center
----
-
-# A modern lifecycle  
-### From chaos → system
-
-<!-- notes:
-What the modern lifecycle includes:
-- Metadata-driven intake
-- Automated triage
-- Unified workstreams
-- Workflow-based authoring
-- Governance loops
-- Tooling (Vale/remark rules, scripts, templates, DWK/RAG)
-- Evidence dashboards
-
-Not a workflow. A system.
--->
 
 ---
 layout: center
@@ -725,20 +735,28 @@ transition: fade
 class: text-center
 ---
 
-# Start small  
-### Pilot → learn → scale
+# Step 2  
+## Audit the scope
 
 <!-- notes:
-The pilot:
-1. Select one product area.  
-2. Improve intake + triage.  
-3. Apply tiering + prioritization.  
-4. Add lightweight automation.  
-5. Measure → adjust.  
-6. Expand intentionally.
+The second step is to audit the scope: what do we actually produce, 
+and does all of it need to exist?
 
-Goal: internal teams say “we want more of this.”
+I begin by listing all content types, variants, and formats. 
+Then I map each one to user needs and business goals.
+Some content directly drives behavior change — onboarding flows, core workflows, troubleshooting. 
+Other content has much lower impact.
+
+By identifying high-impact vs low-impact categories, 
+we can reduce unnecessary variants and focus our efforts.
+
+This step also creates harmony with Task 1: 
+content should support the user journey, not fight against it. 
+The audit ensures everything we produce has a purpose.
+
+Once we know the scope, prioritization becomes meaningful.
 -->
+---
 
 ---
 layout: center
@@ -746,9 +764,262 @@ transition: fade
 class: text-center
 ---
 
-# A modern lifecycle  
-## The operational engine behind clarity and trust
+# Step 3  
+## Prioritize what matters
 
 <!-- notes:
-Final punchline. This ties back to both product and organizational value. End strong and concise.
+A modern lifecycle needs a modern prioritization model.
+I use a dual-track system.
+
+For strategic improvements — revamps, experiments, restructuring — 
+I use an evidence-based flow: 
+North Star → OKRs → GIST → Confidence → ICE → prioritization.  
+This ensures we focus on ideas with the highest potential impact and highest confidence.
+
+For operational work — especially feature documentation — 
+we use the tiering model from Task 1:
+Tier 0 always gets done; Tier 1 gets done unless capacity is constrained; 
+Tier 2 only happens when resources allow.
+
+This dual system creates transparency and alignment. 
+It helps PMs understand why something is prioritized or deprioritized, 
+and it prevents the team from being pulled in every direction by urgent demands.
+
+Knowing what to say “no” to is just as important as what we say “yes” to.
+-->
+---
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Step 4  
+## Allocate time deliberately
+
+<!-- notes:
+Balancing feature work, improvements, and experimentation 
+requires intentional time allocation.
+
+First, writers need support in learning how to estimate. 
+We start with conservative estimates, run retros, and improve accuracy over time — 
+just like engineering teams do.
+
+Second, we define quotas. 
+For example: a percentage of each writer’s capacity is dedicated to experimentation 
+or lifecycle improvements. This prevents a situation where all we ever do is ship feature docs.
+
+Third, we align with leadership. 
+PMs and engineering managers need to understand that experimentation 
+is not a luxury — it’s how we prevent long-term content debt and keep quality high.
+
+Finally, training plays a key role. 
+When contributors understand templates, workflows, and expectations, 
+the entire lifecycle becomes smoother and less reactive.
+
+Deliberate allocation protects teams from overload 
+and ensures we move both fast and smart.
+-->
+---
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Step 5  
+## Strengthen operations
+
+<!-- notes:
+This is the backbone of the lifecycle — the operational engine behind quality and scale.
+
+We begin with clear content guidelines and templates 
+so that writers don’t reinvent the wheel each time.
+
+We improve reuse by identifying when content can be consolidated or modularized. 
+This drastically reduces maintenance burden.
+
+We invest in tooling: 
+automated linting via Vale or remark, 
+standardized screenshot naming, 
+scripts that apply formatting rules across the repo, 
+and snippet libraries or DWK to accelerate writing tasks.
+
+We explore more advanced tools like RAG-based autocomplete,
+which pulls definitions and code references from a single source of truth 
+so content stays consistent.
+
+Next, contribution guidelines. 
+PMs, engineers, and designers must know exactly what information to provide, 
+in what format, and at what time.
+
+We define approval SLAs so content doesn’t sit idle, 
+and engineering allocates a percentage of sprint time 
+to supporting documentation requirements.
+
+Governance ties it all together: 
+periodic QA, flow-adherence reviews, 
+roadmap-driven deprecation, 
+and dashboards that highlight trends and bottlenecks.
+
+Strengthening operations reduces friction, improves quality, 
+and frees writers to do what they do best.
+-->
+---
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Step 6  
+## Measure performance
+
+<!-- notes:
+Performance measurement ensures we make decisions based on evidence, not assumptions.
+
+We evaluate across three lenses: users, business, and operations.
+
+For users: 
+task completion, feature adoption, time to value, onboarding friction, troubleshooting success.
+We also consider readability, comprehension tests, and feedback from support and the community.
+
+For the business: 
+case deflection, chatbot containment, term usage for taxonomies, 
+and the reduction of “how do I…?” support tickets.
+
+For operations: 
+writer focus time, throughput, review cycles, staleness patterns, 
+and the ratio of writing vs non-writing work.
+
+It’s important to emphasize that the goal isn’t for people to spend more time on docs. 
+The goal is to make better decisions and deliver content that drives real behavior change.  
+Evidence is what lets us continuously refine the lifecycle.
+-->
+---
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Step 7  
+## Start small
+
+<!-- notes:
+The safest and most effective way to modernize the lifecycle 
+is to start small and scale intentionally.
+
+We choose a low-effort, high-impact area — 
+a part of the product where pain is clear and improvements are visible.
+
+We apply the new intake, triage, prioritization, 
+and operational workflows to this area.
+
+We measure outcomes, gather feedback, and refine the model.
+
+If the pilot is successful, 
+stakeholders will naturally ask: “We want more of this — how do we get it?”
+
+This approach reduces risk, builds trust, and helps the organization 
+adopt the new lifecycle willingly, not reluctantly.
+-->
+---
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Ideas worth exploring  
+### *Examples, not prescriptions*
+
+<!-- notes:
+I want to close with a set of ideas worth exploring. 
+These are not prescriptions — I don’t believe in proposing specific fixes 
+before understanding the organizational reality in detail.
+But these are the kinds of solutions that often unlock significant improvement.
+
+• Templates and guidelines that eliminate ambiguity  
+• Tooling and automation — linting, scripts, screenshot naming, DWK  
+• Contribution workflows so PMs and engineers provide high-quality inputs  
+• Governance loops: QA cycles, flow adherence, roadmap-driven deprecation  
+• Case deflection mechanisms for support  
+• Reuse strategies to avoid duplicating content  
+• RAG-based authoring assistance to reduce inconsistencies  
+• Automated Slack workflows to triage requests  
+• Strong reporting dashboards
+
+Think of this slide as a “palette,” not a prescription: 
+ideas that can spark conversations once the lifecycle evaluation begins. 
+-->
+---
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Wait — what about AI?
+
+<!-- notes:
+Before closing, I want to address a question that often comes up: 
+where does AI fit into all of this?
+
+AI can enhance almost every part of the lifecycle: 
+from automating formatting, to suggesting content, to detecting inconsistencies, 
+to accelerating reviews, to powering chatbots and internal tools.
+
+But AI cannot fix organizational and operational gaps.
+If the processes are unclear, if the inputs are weak, if governance is missing, 
+AI will simply scale the chaos.
+
+Think of AI as an amplifier:
+when the foundations are strong, AI accelerates us.  
+When the foundations are weak, AI magnifies the pain.
+
+That’s why everything I’ve presented focuses on building the foundations first.
+Once those foundations exist, AI becomes a powerful multiplier — 
+not a band-aid.
+-->
+---
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Thank you  
+### Resources & references  
+*(QR code placeholder)*
+
+<!-- notes:
+Thank you for your time and attention.
+Here are a few resources that influenced parts of this approach: 
+– evidence-based prioritization (Itamar Gilad) 
+– “Docs-as-product” thinking and cross-functional collaboration best practices
+– operational tooling such as Vale, remark, DWK, and RAG-based workflows.
+
+I’ll also add a QR code here linking to my LinkedIn for follow-up.
+-->
+---
+
+---
+layout: center
+transition: fade
+class: text-center
+---
+
+# Q&A
+
+<!-- notes:
+I'm happy to dive deeper into any part of this lifecycle: 
+prioritization, governance, tooling, or how to roll this out incrementally.
 -->

@@ -23,7 +23,7 @@ It's also important to build the infrastructure to be evidence-based. Ability to
 
 Balancing the experimentation with producing feature rollout documentation is key. So a quota must be established and make sure we can experiment while delivering others. We have already seen in Task 1 how to prioritize delivery of content based on the behavioral change it can trigger. We've also seen in task 1 how to create a process that establishes a default set of content based on release tier. Defining standard types and generating tools and processes to produce them more efficiently will free up time for experimentation.
 
-4. Define time allottment: how much time each individual must focus on feature vs revamp? Here it's important to Teach writers how to estimate: start conservatively, do retros, and estimation gets better over time. The key part of doing good estimation is the ability to foresee blockers or bottlenecks and try to prevent them.
+4. Define time allottment: how much time each individual must focus on feature vs revamp? Here it's important to Teach writers how to estimate: start conservatively, do retros (is there any question you had to ask that could be added to the standard set of questions to be answered beforehand?), and estimation gets better over time. The key part of doing good estimation is the ability to foresee blockers or bottlenecks and try to prevent them.
 
 It's important to discuss this with leadership and create the right environment for experimentation to happen. PMs dedicated to a product must know that a part of the efforts MUST be dedicated to experimentation. Training training training collaborators is a key part.
 
@@ -73,7 +73,7 @@ Solutions:
 - Periodic QA random (e.g. look at 3 articles per flow and assess quality)
 - Periodic flow-adherence QA (every 6 months evaluate whether the content still follows the main flows and covers them)
 - Assess content performance and decide action plan for lowest-performing content types
-- Automated content staleness notifications: Every 6 months that an article hasn't been updated, a notification is sent to the author. This didn't work for us in fast-paced environments because the approach gave more importance to response time than to thorough assessment, so I'd rather prevent staleness at the source and deprioritize the retroactive assessment.
+- Automated content staleness notifications: Every 6 months that an article hasn't been updated, a notification is sent to the author. This didn't work for us in fast-paced environments because the approach gave more importance to response time than to thorough assessment, so I'd rather prevent staleness at the source and deprioritize the retroactive assessment. However, a staleness checklist (for example, don't only check the content, but also the performance, the relevance within how the workflow evolved). Or automate this with docs as tests.
 - Periodic cost analysis: is our process still optimal? Do any processes need to be reevaluated, are we generating costs that we could avoid (e.g. stale content?)
 - Strong reporting (dashboards, periodic assessments of metrics)
 
