@@ -42,7 +42,7 @@ transition: fade
   <!-- Cards -->
   <div class="flex flex-wrap gap-6 text-sm mt-6">
     <div class="border rounded-2xl p-4 shadow flex-1 min-w-[250px]">
-      ✅ Solution requires a mix of change management, content operations, and product management
+      ✅ Multi-disciplinary approach
     </div>
     <div class="border rounded-2xl p-4 shadow flex-1 min-w-[250px]">
       ✅ Openness to cross-functional collaboration
@@ -51,10 +51,10 @@ transition: fade
       ✅ Leadership buy-in to treat documentation as a business asset, not a deliverable
     </div>
     <div class="border rounded-2xl p-4 shadow flex-1 min-w-[250px]">
-      ✅ Ability to influence processes and roadmap in teams involved in the solution
+      ✅ Ability to influence
     </div>
     <div class="border rounded-2xl p-4 shadow flex-1 min-w-[250px]">
-      ✅ Team capacity to pilot and iterate before scaling across the organization
+      ✅ Openness experiment and take evidence-based decisions
     </div>
   </div>
 

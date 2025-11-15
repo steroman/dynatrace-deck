@@ -5,22 +5,11 @@ Writers ought to write, remove any friction
 1a. Analyze the technology
 1b. Analyze the people
 1c. Part of the process analysis focuses on analyzing workstreams, and understanding where work comes from and centralize everything in a single board so that it can be tracked.
-The second step is to audit scope: what pieces of content are produced?
+1d. Analyze the performance (linked to part 1: what is the flow we'd like learners to go through and where is it breaking? When it's not breaking, is it triggering the behavior change we want?)
 
-Define a prioritization framework: it's just as important to know what goes first as it is to know what to say "no" to. This criteria must be socialized and have the stakeholder's buy-in, because they need to adopt them to favor decision making.
+2. The second step is to audit scope.
 
-Define time allottment: how much time each individual must focus on feature vs revamp?
-Teach writers how to estimate: start conservatively, do retros, and estimation gets better over time.
-
-The third step is analyze the performance. Data must be collected to cross check performance against business goals and take informed decisions.
-
-"Prioritize content that matters the most for a large SaaS product -> Content that drives the best behavior change.
-
-Iron triangle: scope, resources, time.
-
-Information foraging -> Improve quality of input
-
-Training training training collaborators
+3. Define a prioritization framework: it's just as important to know what goes first as it is to know what to say "no" to. This criteria must be socialized and have the stakeholder's buy-in, because they need to adopt them to favor decision making.
 
 Evidence based
 
@@ -30,9 +19,25 @@ GIST framework
 
 Goal > Ideas > Steps
 
-Start small: take a project with big impact but low effort to use as the pilot. Assess outcome and adjust. Make stakeholders say "we want more of this, what do we need to do to have it?
+It's also important to build the infrastructure to be evidence-based. Ability to set up experiments, ability to serve different content to different cohorts. Ability to track certain metrics and indicators.
 
-STRENGTHEN THE OPERATIONAL SIDE OF THE TEAM -> This is all OPS
+Balancing the experimentation with producing feature rollout documentation is key. So a quota must be established and make sure we can experiment while delivering others. We have already seen in Task 1 how to prioritize delivery of content based on the behavioral change it can trigger. We've also seen in task 1 how to create a process that establishes a default set of content based on release tier. Defining standard types and generating tools and processes to produce them more efficiently will free up time for experimentation.
+
+4. Define time allottment: how much time each individual must focus on feature vs revamp? Here it's important to Teach writers how to estimate: start conservatively, do retros, and estimation gets better over time. The key part of doing good estimation is the ability to foresee blockers or bottlenecks and try to prevent them.
+
+It's important to discuss this with leadership and create the right environment for experimentation to happen. PMs dedicated to a product must know that a part of the efforts MUST be dedicated to experimentation. Training training training collaborators is a key part.
+
+5. Small, evidence-based iterations. Start small: take a project with big impact but low effort to use as the pilot. Assess outcome and adjust. Make stakeholders say "we want more of this, what do we need to do to have it? A culture of experimentation can be built by showing the benefits of a rigorous approach and creating a safe space for experimentation.
+
+6. The third step is analyzing the performance. Data must be collected to cross check performance against business goals and take informed decisions and pivot/iterate accordingly. At the same time, data must be collected about the operational side of things.
+
+7. Strengthening the operational side of everything is key. Some solutions are below.
+
+Iron triangle: scope, resources, time.
+
+Information foraging -> Improve quality of input
+
+STRENGTHEN THE OPERATIONAL SIDE OF THE TEAM -> This is all Operational rigour.
 
 Solutions:
 
@@ -43,11 +48,13 @@ Solutions:
 - Contribution guidelines
   - Make it very clear how you expect people to contribute and make it effortless for them.
 - Scripting: e.g. implement a vale/remark lint rule and create a script to fix them all
-- Training to everyone in the company, when they join, docs = product, what does it mean to support docs in your role (PM, Dev, Designer, etc) 
+- Training to everyone in the company, when they join, docs = product, what does it mean to support docs in your role (PM, Dev, Designer, etc). Becomes part of company-wide onboarding.
   - Docs are not a chore, they're a product asset
-- Automated checks: linting, vale MCP server
+- Automated checks: linting, vale MCP server, remark
 - Automated screenshot naming
-- Clear docs approval process
+- Clear docs approval process and SLAs (tasks can't sit in review with PMs for 1 week)
+  - Incentive system (e.g. PMs performance is also evaluated to their adherence to the SLAs)
+  - Engineering sprint planning allots X% to supporting writers
 - Writing case deflection too: when someone submits a request, we give them articles to check before escalating to a real human?
 - Automated Slack notifications
 - CLI/VSCode tooling like snippets or DWK (Documentation Writing Kit)
@@ -58,6 +65,7 @@ Solutions:
   - Reasoning in workflows also allows to assess divergence from them: errors, different paths, shortcuts, limitations, business logic, etc
   - KTLO?
 - Checklists
+- Writer KTLO (solves docs bugs for a week, then rotates)
 
 ## Governance
 
@@ -66,7 +74,7 @@ Solutions:
 - Periodic flow-adherence QA (every 6 months evaluate whether the content still follows the main flows and covers them)
 - Assess content performance and decide action plan for lowest-performing content types
 - Automated content staleness notifications: Every 6 months that an article hasn't been updated, a notification is sent to the author. This didn't work for us in fast-paced environments because the approach gave more importance to response time than to thorough assessment, so I'd rather prevent staleness at the source and deprioritize the retroactive assessment.
-- Periodic cost analysis: are we still working at the optimal effort? Do any processes need to be reevaluated, are we generating costs that we could avoid (e.g. stale content?)
+- Periodic cost analysis: is our process still optimal? Do any processes need to be reevaluated, are we generating costs that we could avoid (e.g. stale content?)
 - Strong reporting (dashboards, periodic assessments of metrics)
 
 ## Analysis
@@ -86,6 +94,7 @@ THE GOAL ISN'T FOR PEOPLE TO SPEND MORE TIME ON DOCS
 - User behavior metrics
   - Feature adoption
   - Task completion
+  - Time to value
   - Task errors
 
 ## Work streams
