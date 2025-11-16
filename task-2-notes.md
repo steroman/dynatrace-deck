@@ -66,6 +66,7 @@ Solutions:
   - KTLO?
 - Checklists
 - Writer KTLO (solves docs bugs for a week, then rotates)
+- Open-source docs with contribution (tells us a lot about whether people actually read and understand. Grafana does it, Datadog does it)
 
 ## Governance
 

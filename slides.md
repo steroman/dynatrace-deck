@@ -2,10 +2,8 @@
 theme: ./theme
 layout: cover
 transition: fade
-title: A holistic approach to the learning journey
-subtitle: Turning Dynatrace's content into a strategic asset
+title: Welcome
 ---
-
 <template #logo>
   <img
     src="./assets/logo/Dynatrace_Logo_color_negative_vertical.svg"
@@ -13,36 +11,33 @@ subtitle: Turning Dynatrace's content into a strategic asset
   >
 </template>
 
-<!-- notes:
-Hello everyone — for Task 1, I want to walk you through how we can elevate documentation 
-from a supporting function into a strategic asset that drives activation, adoption, 
-and long-term value for our customers.
-
-This first part introduces a holistic approach to content strategy — one that aligns all the 
-different teams producing user-facing information, and ensures customers receive a coherent, 
-predictable, and behavior-shaping learning experience. -->
 ---
 theme: ./theme
 layout: default
+title: Table of contents
+transition: fade
 ---
 
-<Quote author="A Dynatrace customer">
-  It's like the folks at Dynatrace can read my mind.  
-  They know what information I need, when I need it,  
-  and the best way to provide it to me.
-</Quote>
+<DTChecklist :items="[
+  { title: 'Part 1 — A holistic approach to the learning journey' },
+  { title: 'Part 1 — Q&A' },
+  { title: 'Part 2 — Modernizing the content lifecycle' },
+  { title: 'Part 2 — Q&A' }
+  ]" />
 
 <!-- notes:
-This quote captures the vision we’re aiming for: a learning experience that feels effortless, 
-anticipatory, and deeply aligned with the user’s needs and mindset at every step.
+A quick overview of what we'll cover today.
 
-Most companies deliver information in disconnected pieces. 
-But from a user’s point of view, all information — docs, marketing, UI text, support — 
-is part of one single experience. When the pieces connect smoothly, the user feels guided. 
-When they don’t, the user feels lost.
+Part 1 focuses on the strategic layer — aligning all the contributors to user-facing content 
+and reframing documentation as a cohesive, behavior-shaping learning journey.
 
-So the question is: what stands between us and being this kind of company every day?
+Part 2 takes a more operational perspective — investigating how to modernize the content 
+lifecycle so writers can work efficiently, content stays fresh, and quality scales without 
+burnout.
+
+We'll have Q&A sessions at the end of each part to unpack the presentation and reasoning.
 -->
+
 ---
 theme: ./theme
 layout: default
@@ -96,6 +91,56 @@ more together.
 
 ---
 theme: ./theme
+layout: cover
+transition: fade
+title: A holistic approach to the learning journey
+subtitle: Turning Dynatrace's content into a strategic asset
+---
+
+<template #logo>
+  <img
+    src="./assets/logo/Dynatrace_Logo_color_negative_vertical.svg"
+    class="w-20"
+  >
+</template>
+
+<!-- notes:
+Hello everyone — for Task 1, I want to walk you through how we can elevate documentation 
+from a supporting function into a strategic asset that drives activation, adoption, 
+and long-term value for our customers.
+
+This first part introduces a holistic approach to content strategy — one that aligns all the 
+different teams producing user-facing information, and ensures customers receive a coherent, 
+predictable, and behavior-shaping learning experience. -->
+
+---
+theme: ./theme
+layout: default
+title: Testimonial
+---
+
+<div class="flex justify-center mt-10">
+  <Quote author="A Dynatrace customer">
+    It's like the folks at Dynatrace can read my mind.  
+    They know what information I need, when I need it,  
+    and the best way to provide it to me.
+  </Quote>
+</div>
+
+<!-- notes:
+This quote captures the vision we’re aiming for: a learning experience that feels effortless, 
+anticipatory, and deeply aligned with the user’s needs and mindset at every step.
+
+Most companies deliver information in disconnected pieces. 
+But from a user’s point of view, all information — docs, marketing, UI text, support — 
+is part of one single experience. When the pieces connect smoothly, the user feels guided. 
+When they don’t, the user feels lost.
+
+So the question is: what stands between us and being this kind of company every day?
+-->
+
+---
+theme: ./theme
 layout: twocols
 title: Current state
 leftTitle: User perspective
@@ -103,20 +148,24 @@ rightTitle: Org perspective
 ---
 
 <template #left>
-  <ul>
-    <li>🔍 Hard to discover the right information</li>
-    <li>🤝 Unclear or inconsistent content</li>
-    <li>📉 Reliance on support to complete tasks</li>
-  </ul>
+  <DTCard size="md">
+    <ul class="space-y-2 text-left">
+      <li>🔍 Hard to discover the right information</li>
+      <li>🤝 Unclear or inconsistent content</li>
+      <li>📉 Reliance on support to complete tasks</li>
+    </ul>
+  </DTCard>
 </template>
 
 <template #right>
-  <ul>
-    <li>🛢️ No narrative continuity across team</li>
-    <li>⚙️ Content and business goals misaligned</li>
-    <li>📊 More cases or drop-off</li>
-    <li>⬇️ Low feature discovery</li>
-  </ul>
+  <DTCard size="md">
+    <ul class="space-y-2 text-left">
+      <li>🛢️ No narrative continuity across team</li>
+      <li>⚙️ Content and business goals misaligned</li>
+      <li>📊 More cases or drop-off</li>
+      <li>⬇️ Low feature discovery</li>
+    </ul>
+  </DTCard>
 </template>
 
 <!-- notes:
@@ -139,26 +188,29 @@ leftTitle: No action
 rightTitle: Action
 ---
 
-  <template #left>
-    <!-- <h3 class="text-2xl font-semibold mb-4">If we don't act</h3> -->
+<template #left>
+  <DTCard size="md">
     <v-clicks>
-      <ul class="space-y-2">
+      <ul class="space-y-2 text-left">
         <li>🧱 Growing content debt</li>
         <li>💔 Declining user trust</li>
         <li>💸 Rising support costs</li>
       </ul>
     </v-clicks>
-  </template>
+  </DTCard>
+</template>
 
-  <template #right>
+<template #right>
+  <DTCard size="md">
     <v-clicks>
-      <ul class="space-y-2">
+      <ul class="space-y-2 text-left">
         <li>🚀 Knowledge accelerates product growth</li>
         <li>🤝 Users self-serve confidently</li>
         <li>💡 Documentation amplifies adoption</li>
       </ul>
     </v-clicks>
-  </template>
+  </DTCard>
+</template>
 
 <!-- notes:
 This slide creates the tension and the opportunity.
@@ -196,7 +248,7 @@ and influencing the people, processes, and technology involved in shaping the us
 theme: ./theme
 layout: default
 transition: fade
-title: Solution overview
+title: Solution strategy
 ---
 
 <DTTimeline :items="[
@@ -382,7 +434,7 @@ title: Shift content left
   { icon: '⏱️', title: 'Start earlier' },
   { icon: '📚', title: 'Shared responsibility' },
   { icon: '⚙️', title: 'Standards + tooling' },
-  { icon: '🌱', title: 'Culture change', size: 'lg' }
+  { icon: '🌱', title: 'Culture change'}
 ]" />
 
 <!-- notes:
@@ -425,14 +477,38 @@ This sets the foundation for Task 2 — where we look at how to modernize the op
 that makes this strategy sustainable.
 -->
 
+---
+theme: ./theme
+layout: cover
+transition: fade
+class: text-center
+title: Q&A
+---
 
 ---
 theme: ./theme
 layout: cover
 transition: fade
-title: Part 2
-subtitle: Modernizing the content lifecycle
+title: Modernizing the content lifecycle
+subtitle: Building the foundation for sustainable content operations at scale
 ---
+
+<template #logo>
+  <img
+    src="./assets/logo/Dynatrace_Logo_color_negative_vertical.svg"
+    class="w-20"
+  >
+</template>
+
+<!-- notes:
+For Task 2, we're going to shift from strategy to operations — 
+specifically, how we modernize the content lifecycle so writers 
+can focus on high-value work, content stays fresh, and end-user 
+experiences continuously improve.
+
+This part outlines how we evaluate the current system, identify 
+bottlenecks, and introduce a scalable, data-informed, and 
+developer-friendly lifecycle model. -->
 
 <!-- notes:
 In Task 1, we focused on rethinking documentation strategically. 
@@ -461,17 +537,54 @@ and content that keeps up with the pace of change.
 
 ---
 theme: ./theme
-layout: default
+layout: twocols
+title: Guiding principles
 transition: fade
-class: text-center
 ---
 
-# Our operating assumptions
+<template #left>
+<div class="flex flex-col gap-6">
 
-**Velocity =** less friction · better tooling · solid processes  
-**Quality =** clarity · relevance · strong inputs  
-**Scalability =** standards · automation · shared ownership  
-**Sustainability =** balanced workloads · clear roles
+  <DTCard title="Velocity" size="sm">
+    <ul class="space-y-1 text-sm text-left text-dt-text-muted">
+      <li>• Less friction</li>
+      <li>• Better tooling</li>
+      <li>• Solid processes</li>
+    </ul>
+  </DTCard>
+
+  <DTCard title="Quality" size="sm">
+    <ul class="space-y-1 text-sm text-left text-dt-text-muted">
+      <li>• Clarity</li>
+      <li>• Relevance</li>
+      <li>• Strong inputs</li>
+    </ul>
+  </DTCard>
+
+</div>
+</template>
+
+<template #right>
+<div class="flex flex-col gap-6">
+
+  <DTCard title="Scalability" size="sm">
+    <ul class="space-y-1 text-sm text-left text-dt-text-muted">
+      <li>• Standards</li>
+      <li>• Automation</li>
+      <li>• Shared ownership</li>
+    </ul>
+  </DTCard>
+
+  <DTCard title="Sustainability" size="sm">
+    <ul class="space-y-1 text-sm text-left text-dt-text-muted">
+      <li>• Balanced workloads</li>
+      <li>• Clear roles</li>
+      <li>• Expectation hygiene</li>
+    </ul>
+  </DTCard>
+
+</div>
+</template>
 
 <!-- notes:
 These assumptions guide every decision in this lifecycle.
@@ -485,18 +598,26 @@ These assumptions shape the whole approach.
 theme: ./theme
 layout: default
 transition: fade
+title: What they'll say about us
 ---
 
-<Quote author="CPO">
-Documentation is aligned with business outcomes and drives product adoption, reduces support workload, and makes users happy.</Quote>
+<div class="flex flex-col gap-3 items-center">
 
-<Quote author="Information Developer">
-I spend most of my time on things that matter and I feel a sense of ownership and purpose.
-</Quote>
+  <Quote author="CPO" variant="compact" v-click>
+    Documentation is aligned with business outcomes and drives product adoption,
+    reduces support workload, and makes users happy.
+  </Quote>
 
-<Quote author="Product Manager">
-I see documentation as a core product pillar and I know exactly what my role is in taking it there.
-</Quote>
+  <Quote author="Information Developer" variant="compact" v-click>
+    I spend most of my time on things that matter and I feel a sense of ownership and purpose.
+  </Quote>
+
+  <Quote author="Product Manager" variant="compact" v-click>
+    I see documentation as a core product pillar and I know exactly what my role is in taking it there.
+  </Quote>
+
+</div>
+
 
 <!-- notes:
 Success looks different for different people.
@@ -512,15 +633,15 @@ transition: fade
 class: text-center
 ---
 
-# The path forward
-
-**1. Evaluate the system**  
-**2. Audit scope**  
-**3. Prioritize what matters**  
-**4. Allocate time deliberately**  
-**5. Strengthen operations**  
-**6. Measure performance**  
-**7. Start small**
+<DTTimeline :items="[
+  'Analyze the system',
+  'Audit scope',
+  'Prioritize with evidence',
+  'Allocate time deliberately',
+  'Strengthen operations',
+  'Measure performance',
+  'Start small'
+]" />
 
 <!-- notes:
 These are the seven steps I’ll walk through.
@@ -532,86 +653,210 @@ theme: ./theme
 layout: default
 transition: fade
 class: text-center
+title: Analyze the system
 ---
 
-# Step 1  
-## Evaluate the system
+<template #step-nav>
+  <DTWizardNav :count="7" :active="1" />
+</template>
+
+<!-- Visible content derived from the speaker notes -->
+<DTCardGrid :items="[
+  { icon: '👥', title: 'People', body: ['Collaboration', 'Skills', 'Capacity'], size: 'sm' },
+  { icon: '🔁', title: 'Process', body: ['Workstreams', 'Dependencies', 'Standards'], size: 'sm' },
+  { icon: '🛠️', title: 'Technology', body: ['Reliability', 'Automation', 'Manual work'], size: 'sm' },
+]" />
 
 <!-- notes:
-Evaluating the system means understanding how work actually flows today.
-I start with people: where writers lose time, what interrupts their focus, 
-and how often they have to chase context instead of writing.
-Then process: what the end-to-end workflow really looks like, 
-how many workstreams compete for attention, and where handoffs break.
-Then technology: where metadata, templates, or automation are missing and causing manual rework.
-A key part of this step is centralizing all incoming work into a single board so we can see and prioritize it consistently.
-Evaluating the system reveals where friction lives and where improvements will have the highest impact.
+Evaluating the system means observing how work happens.
+
+I start with people: how they collaborate day to day, where they lose time or context, and whether they have the skills and clarity they need to work at their best, and whether their capacity is optimal.
+
+Then I look at process: the real end-to-end workflow, the workstreams competing for attention, where handoffs break, and especially the dependencies between steps. These are the structural dependencies that slow work down — when one part of the system can’t progress because another process, approval, or team isn’t ready. This is where most bottlenecks tend to appear.
+
+Then I look at technology: whether the tooling is reliable, whether automation exists where it should, and where it could be improved to increase efficiency.
+
+The goal of this step is simple: reveal where friction lives, understand what slows the system down, and identify where improvements will have the highest impact.
 -->
 ---
 theme: ./theme
 layout: default
 transition: fade
 class: text-center
+title: Analyze the scope
 ---
 
-# Step 2  
-## Audit the scope
+<template #step-nav>
+  <DTWizardNav :count="7" :active="2" />
+</template>
+
+<DTCardGrid :items="[
+  { icon: '🗂️', title: 'See what exists', size: 'sm' },
+  { icon: '🎯', title: 'Understand why', size: 'sm' },
+  { icon: '📏', title: 'Define value', size: 'sm' }
+]" />
 
 <!-- notes:
-Auditing the scope means identifying what we actually produce and why.
-We list content types, formats, and variants, and evaluate each one based on user value and business value.
-Many organizations accumulate content that no longer serves a purpose or is duplicated in multiple places.
-The audit helps us declutter, identify high-impact content areas, 
-and ensure that what we maintain aligns with user needs and with the workflows defined in Task 1.
-This step sets the stage for meaningful prioritization.
+Analyzing the scope means getting a clear picture of what we actually produce today and whether it still matters.
+
+I start by mapping all the content types and variants across the product. Not to create a catalog, but to understand our real footprint: where our time goes, what we maintain, and what still exists simply because “we’ve always done it that way.”
+
+Then I look at value — and here I bring back what we defined in Task 1. We said that value isn’t engagement. People don’t read documentation for fun. Value is tied to behavior: does this content help users complete a task, move through a workflow, or adopt something meaningful? If it doesn’t, it’s noise.
+
+With that definition in place, we can assess content consistently. And to do that, we need a simple evaluation system, otherwise teams fall back into habits and low-value work keeps draining energy. A clear scope map gives us the evidence we need to experiment, make trade-offs, and focus effort where it actually changes user behavior.
+
+The goal of this step is to see the difference between what’s essential and what’s habitual, so we can declutter, refocus, and move toward a more intentional, evidence-based content practice.
 -->
 ---
 theme: ./theme
 layout: default
 transition: fade
 class: text-center
+title: Prioritize with evidence
 ---
 
-# Step 3  
-## Prioritize what matters
+<template #step-nav>
+  <DTWizardNav :count="7" :active="3" />
+</template>
+
+
+<DTCardGrid :items="[
+  {
+    icon: '🧭',
+    title: 'Strategic track',
+    body: [
+      'North Star → OKRs → GIST',
+      'Confidence scoring & RICE',
+      'Experimentation guided by evidence'
+    ],
+    size: 'sm'
+  },
+  {
+    icon: '⚙️',
+    title: 'Operational track',
+    body: [
+      'Tiering model (Task 1)',
+      'Defined deliverables per tier',
+      'Clarity on what ships and what doesn’t'
+    ],
+    size: 'sm'
+  }
+]" />
 
 <!-- notes:
-To focus the team’s efforts, I use a dual-track prioritization model.
-For strategic improvements—revamps, experiments, new content types—I use evidence-based tools like 
-North Star, OKRs, GIST, confidence scoring, and ICE. This ensures we invest time in ideas that have real impact.
-For operational work—especially feature documentation—we rely on the tiering model from Task 1.
-Tier 0 always gets delivered, Tier 1 usually does, and Tier 2 only if capacity allows.
-This creates clarity for writers and PMs and helps everyone understand why some work moves forward and some doesn’t.
+By this point, we’ve defined what “value” actually means, and that becomes the anchor for prioritization. 
+Once value is clear, we can finally create a framework that helps us focus on what matters and say no to what doesn’t.
+
+I use two prioritization lanes because the team works on two types of work.
+
+The first lane is evidence-based prioritization for strategic improvements: revamps, experiments, and new content concepts.
+Here I like a structured flow—starting from the North Star, down to OKRs, then to GIST, confidence scoring, and RICE.
+This gives us a simple, logical path from vision to ideas to steps, and it helps us choose experiments based on impact, not instinct.
+
+The second lane is operational work, especially feature documentation. 
+For this, we rely on the tiering model from Task 1, where each tier has a defined set of documentation expectations.
+Tier 0 always gets delivered; Tier 1 usually does; Tier 2 only if capacity allows.
+This removes ambiguity, gives writers predictable guardrails, and creates transparency for PMs.
+
+What matters is that both lanes use clear scoring standards. 
+They align everyone on what’s important, on what moves the needle, and—equally important—on what we intentionally deprioritize.
+Prioritization is not only about choosing what to do, but about having shared principles to guide what we say no to when things get ambiguous.
 -->
 ---
 theme: ./theme
 layout: default
 transition: fade
 class: text-center
+title: Allocate time deliberately
 ---
 
-# Step 4  
-## Allocate time deliberately
+<template #step-nav>
+  <DTWizardNav :count="7" :active="4" />
+</template>
+
+<DTCardGrid :items="[
+  {
+    icon: '🛡️',
+    title: 'Protect capacity',
+    body: ['Allocate upfront', 'Safeguard experimentation', 'Avoid ad-hoc drift'],
+    size: 'sm'
+  },
+  {
+    icon: '🔄',
+    title: 'Stay flexible',
+    body: ['Rebalacing', 'Flexible quotas', 'Responsive to demand'],
+    size: 'sm'
+  },
+  {
+    icon: '🧮',
+    title: 'Estimate confidently',
+    body: ['Start conservative', 'Track', 'Refine'],
+    size: 'sm'
+  }
+]" />
 
 <!-- notes:
-Balancing feature documentation, revamps, and experimentation requires intentional planning.
-Writers benefit from learning to estimate work realistically, and retros help improve those estimates over time.
-We protect experimentation time by defining quotas so that innovation doesn’t get pushed aside by day-to-day delivery.
-Leadership alignment is key—PMs and engineers should understand that experimentation isn’t optional; it’s what improves the system long-term.
-Training contributors on workflows and templates also reduces friction and speeds up delivery.
+Allocating time is a system-level choice. It’s not about personal productivity—it’s about how we shape the team’s capacity to deliver and to improve.
+
+The first part is protecting capacity. We decide upfront how much time goes to feature work and how much we deliberately safeguard for experimentation or improvements. Without that protection, day-to-day work always expands to fill all available time.
+
+The second part is staying flexible. We treat our allocation like an experiment: we try a split, we observe how it behaves, and we rebalance as needed. Some cycles will allow more experimentation, some less—the point is that the adjustment is intentional, not reactive.
+
+The third part is estimating confidently. Writers start with conservative estimates, track actual effort, and refine over time. As estimation accuracy improves, our capacity planning becomes more trustworthy and predictable, which makes the whole system easier to manage.
+
+When we design our capacity deliberately—and revisit it regularly—we protect the space for innovation while still delivering reliably on the work that keeps the product moving forward.
 -->
 ---
 theme: ./theme
 layout: default
 transition: fade
 class: text-center
+title: Strengthen operations
 ---
 
-# Step 5  
-## Strengthen operations
+<template #step-nav>
+  <DTWizardNav :count="7" :active="5" />
+</template>
+
+<DTCardGrid :items="[
+  {
+    icon: '📐',
+    title: 'Standards',
+    body: ['Guidelines', 'Templates', 'Contribution', 'Process & SLAs'],
+    size: 'sm'
+  },
+  {
+    icon: '⚙️',
+    title: 'Tooling',
+    body: ['Automate quality', 'AI-assisted workflows', 'Reusable libraries'],
+    size: 'sm'
+  },
+  {
+    icon: '🔍',
+    title: 'Governance',
+    body: ['Routine QA', 'Standards adherence', 'Roadmap-driven deprecation'],
+    size: 'sm'
+  }
+]" />
 
 <!-- notes:
-Operational rigor is what makes a lifecycle scalable.
+This is the most important slide for me. So important that this could even be the only slide of the presentation.
+Strengthening operations is what makes the entire lifecycle scalable. Rigor isn’t bureaucracy here—it’s the foundation that allows us to move fast without breaking things.
+
+We start with standards. Clear guidelines, templates, contribution expectations, and defined processes mean writers don’t waste time reinventing structure or chasing missing inputs. Standards reduce ambiguity, and they create shared expectations across teams. SLAs also help everyone understand how work flows and what timelines are realistic.
+
+Then we look at tooling. Anything that can be automated should be. Linting, scripts, naming conventions, snippet libraries, and AI-assisted workflows don’t replace writers—they remove the repetitive work so writers can focus on clarity and correctness. Strong tooling raises the baseline quality and keeps the system predictable as we scale.
+
+Finally, governance ties everything together. Routine QA, adherence checks, and roadmap-driven deprecation prevent staleness and keep the content aligned with how users actually move through the product. Governance also ensures we don’t accumulate content simply because it already exists—everything stays tied to value.
+
+What matters here is that strong operations make experimentation safe. When standards, tooling, and governance are solid, we can measure more reliably, adjust faster, and take calculated risks without destabilizing the system.
+
+This is why operations are the backbone of a modern lifecycle. Without operational rigor, prioritization doesn’t stick, time allocation isn’t trustworthy, and improvements won’t scale.
+-->
+
+<!-- notes:
+This is the most important slide for me. So important that this could even be the only slide of the presentation. Tight operations are the backbone of a modern lifecycle. Rigor is what makes a lifecycle scalable.
+
 We start with clear guidelines and templates so writers don’t have to reinvent structure or terminology.
 We expand content reuse where it makes sense, reducing maintenance effort.
 We invest in tooling: automated linting, scripts, standardized naming, and snippet libraries that speed up writing.
@@ -624,10 +869,33 @@ theme: ./theme
 layout: default
 transition: fade
 class: text-center
+title: Measure performance
 ---
 
-# Step 6  
-## Measure performance
+<template #step-nav>
+  <DTWizardNav :count="7" :active="6" />
+</template>
+
+<DTCardGrid :items="[
+  {
+    icon: '📊',
+    title: 'Content performance',
+    body: ['Behavior-based metrics', 'Task completion', 'Workflow progression'],
+    size: 'sm'
+  },
+  {
+    icon: '🏗️',
+    title: 'Operational performance',
+    body: ['Throughput', 'Focus time', 'Review cycles'],
+    size: 'sm'
+  },
+  {
+    icon: '🧩',
+    title: 'Technology performance',
+    body: ['Tool reliability', 'Automation impact', 'Friction tracking'],
+    size: 'sm'
+  }
+]" />
 
 <!-- notes:
 A modern lifecycle relies on evidence, not guesswork.
@@ -642,50 +910,57 @@ theme: ./theme
 layout: default
 transition: fade
 class: text-center
+title: Start small
 ---
 
-# Step 7  
-## Start small
+<template #step-nav>
+  <DTWizardNav :count="7" :active="7" />
+</template>
+
+<DTCardGrid :items="[
+  {
+    icon: '🪴',
+    title: 'Choose a small pilot',
+    body: ['Low effort', 'High impact', 'Clear boundaries'],
+    size: 'sm'
+  },
+  {
+    icon: '🔬',
+    title: 'Experiment safely',
+    body: ['Apply the model', 'Gather evidence', 'Learn fast'],
+    size: 'sm'
+  },
+  {
+    icon: '📈',
+    title: 'Expand intentionally',
+    body: ['Refine first', 'Scale gradually', 'Create pull, not push'],
+    size: 'sm'
+  }
+]" />
 
 <!-- notes:
-We introduce change safely by starting small.
-We pick a low-effort, high-impact part of the product and apply the new intake, prioritization, and operational foundations to it.
-We measure results, gather feedback, and refine the model before expanding it.
-A good pilot creates pull rather than push—teams see the improvement and want the same clarity and consistency.
-This approach builds trust and minimizes risk during the transition.
+Starting small is how we introduce change safely and build confidence in the new lifecycle.
+
+We choose a low-effort, high-impact area of the product—something meaningful but contained—and apply the new intake, prioritization, and operational foundations to it. This gives us a clear testing ground without overwhelming the team or increasing risk.
+
+The goal here is to promote a culture of experimentation. We make a small bet, we gather evidence, we validate or challenge our assumptions, and we adjust. The point isn’t to get everything perfect on the first attempt—it’s to learn quickly and safely.
+
+Once we see how the model behaves in practice, we refine it and scale it. A good pilot creates pull rather than push: when teams see clarity, predictability, and faster cycles, they naturally want the same structure for their areas.
+
+It's also important to consider the team where experiments are run. A newly-formed team is a good choice because their ways of working are not well established yet, so they'll be more open to experimentation and feedback.
+
+This step keeps the transition lean, incremental, and data-informed—so we reduce risk while building a strong base of trust and evidence before expanding the new lifecycle more broadly.
 -->
 ---
 theme: ./theme
-layout: default
+layout: cover
 transition: fade
 class: text-center
+title: Wait—What about AI?
 ---
-
-# Ideas worth exploring  
-### *Examples, not prescriptions*
 
 <!-- notes:
-I want to close with a set of ideas worth exploring once the foundations are in place.
-These are not prescriptions, because solutions only work when they fit the organization.
-But here are areas that often unlock value:
-improved templates and guidelines, automation through linting or scripts,
-better contribution workflows, stronger governance loops, case deflection mechanisms, 
-content reuse strategies, and RAG-based authoring assistance to improve consistency.
-These ideas can spark future conversations after the lifecycle evaluation begins.
--->
----
-theme: ./theme
-layout: default
-transition: fade
-class: text-center
----
-
-# Wait — what about AI?
-
-<!-- notes:
-AI plays a role across every part of the lifecycle, but it can’t replace the foundations.
-AI can accelerate formatting, improve suggestions, detect inconsistencies, 
-and power internal tools or chatbots.
+I see AI as an enhancer. It can potentially be in every part of this lifecycle, but it can’t replace the foundations.
 But if processes are unclear, inputs weak, or governance missing, 
 AI will simply amplify the chaos rather than solve it.
 That’s why we focus on building strong processes first.
@@ -696,11 +971,68 @@ theme: ./theme
 layout: default
 transition: fade
 class: text-center
+title: Real-life ideas
 ---
 
-# Thank you  
-### Resources & references  
-*(QR code placeholder)*
+<StickyWall>
+  <StickyNote>Content guidelines</StickyNote>
+  <StickyNote>Object-oriented knowledge</StickyNote>
+  <StickyNote>Templates + Content reuse</StickyNote>
+  <StickyNote>Template adherence engine</StickyNote>
+  <StickyNote>Contribution guidelines</StickyNote>
+  <StickyNote>Automated linting (vale/remark)</StickyNote>
+  <StickyNote>Fix-all scripts for lint rules</StickyNote>
+  <StickyNote>Company-wide docs onboarding</StickyNote>
+  <StickyNote>Automated screenshot naming</StickyNote>
+  <StickyNote>Docs approval process & SLAs</StickyNote>
+  <StickyNote>Engineering time to support writers</StickyNote>
+  <StickyNote>Content staleness workflow</StickyNote>
+  <StickyNote>Slack automations (bots + notifications)</StickyNote>
+  <StickyNote>Documentation writing kit (CLI, snippets)</StickyNote>
+  <StickyNote>RAG-based authoring assistance</StickyNote>
+  <StickyNote>Table formatter</StickyNote>
+  <StickyNote>Deprecations in roadmap</StickyNote>
+  <StickyNote>Checklists</StickyNote>
+  <StickyNote>Writer KTLO</StickyNote>
+  <StickyNote>Open-source docs contributions</StickyNote>
+  <StickyNote>Docs analytics</StickyNote>
+  <StickyNote>Random QA</StickyNote>
+  <StickyNote>Strong reporting</StickyNote>
+  <StickyNote>Experimentation platform</StickyNote>
+  <StickyNote>Support triaging</StickyNote>
+</StickyWall>
+
+<!-- notes:
+I know the presentation has indulged a lot in the theoretical space, so I want to close by showing that I have many ideas ready to explore.
+
+I left this slide at the end in case there was time to explore some of these together or, if there wasn't, leave them here for you to explore async. I'm sure some of them you've already implemented, some fully, some partially, some didn't work out for you. Some are about process, some about tech, some about influencing.
+
+As mentioned, these aren’t prescriptions—but rather starting points, as my confidence about your organizational reality is low.
+
+The goal here is to spark curiosity and show the kind of hands-on improvements that can unlock value.
+
+Think of this like an IDEAs bucket in GIST, where you can score them and prioritize them based on evidence and value.
+
+-->
+
+---
+layout: thankyou
+title: Thank you!
+contactQR: /assets/linkedin-qr.png
+repoUrl: https://github.com/steroman/dynatrace-deck
+resources:
+  - label: "Automating documentation maintenance workflow (Dimple Poojary, WTD)"
+    url: "https://www.youtube.com/watch?v=156egDk_u38"
+
+  - label: "Activating product knowledge (Stephan Delbos, WTD)"
+    url: "https://www.youtube.com/watch?v=gTwKhcKxvRA"
+
+  - label: "Better Onboarding (Book)"
+    url: "https://www.kryshiggins.com/create-a-user-onboarding-compass/"
+
+  - label: "Itamar Gilad's blog"
+  - url: "https://itamargilad.com/resources/"
+---
 
 <!-- notes:
 Thank you for the time and attention.
@@ -711,12 +1043,11 @@ Happy to share any of these references afterward.
 -->
 ---
 theme: ./theme
-layout: default
+layout: cover
 transition: fade
 class: text-center
+title: Q&A
 ---
-
-# Q&A
 
 <!-- notes:
 I’m happy to go deeper into prioritization, governance, tooling, 

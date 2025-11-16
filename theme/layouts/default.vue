@@ -21,8 +21,7 @@
     </div>
 
     <!-- BODY (independent from header height) -->
-    <div class="flex-1 w-full max-w-6xl mx-auto flex justify-center">
-      <slot />
+<div class="flex-none w-full max-w-6xl mx-auto flex justify-center">      <slot />
     </div>
 
   </div>
