@@ -46,8 +46,8 @@ So the question is: what stands between us and being this kind of company every 
 ---
 theme: ./theme
 layout: default
-title: Due diligence
-subtitle: Assumptions and "gotchas"
+title: Housekeeping 🧹
+subtitle: Assumptions and clarifications
 transition: fade
 ---
 
