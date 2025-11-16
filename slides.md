@@ -1,6 +1,7 @@
 ---
 theme: ./theme
 layout: cover
+transition: fade
 title: A holistic approach to the learning journey
 subtitle: Turning Dynatrace's content into a strategic asset
 ---
@@ -19,8 +20,7 @@ and long-term value for our customers.
 
 This first part introduces a holistic approach to content strategy — one that aligns all the 
 different teams producing user-facing information, and ensures customers receive a coherent, 
-predictable, and behavior-shaping learning experience.
--->
+predictable, and behavior-shaping learning experience. -->
 ---
 theme: ./theme
 layout: default
@@ -48,30 +48,52 @@ theme: ./theme
 layout: default
 title: Due diligence
 subtitle: Assumptions and "gotchas"
+transition: fade
 ---
 
 <DTChecklist :items="[
-  { icon: '✅', title: 'Multi-disciplinary approach', iconSize: 'sm' },
-  { icon: '✅', title: 'Openness to collaboration', iconSize: 'sm' },
-  { icon: '✅', title: 'Leadership buy-in for docs as a business asset', iconSize: 'sm' },
-  { icon: '✅', title: 'Ability to influence', iconSize: 'sm' },
-  { icon: '✅', title: 'Evidence-based experimentation', iconSize: 'sm' },
-  { icon: '✅', title: 'Add sixth card here', iconSize: 'sm' }
+  { title: 'Strategy + ops + change management' },
+  { title: 'Part 1 and 2 overlap' },
+  { title: 'Mindset shift: collective ownership' },
+  { title: 'Organizational openness and support' },
+  { title: 'Evidence-based decisions' },
+  { title: 'Iterative change from experimentation' }
 ]" />
 
-
 <!-- notes:
-Before proposing a strategy, it’s important to be explicit about the assumptions behind it. 
-This approach works best when documentation is treated as a shared, multi-disciplinary effort — 
-not something writers try to solve alone while everyone else drops information on them at the last minute.
+Before we jump in, a bit of housekeeping. I want to make my assumptions explicit so the rest 
+of the presentation has the right framing. These aren’t constraints — they’re simply the 
+conditions that make this kind of work meaningful and sustainable. This is probably the longest slide, but it's important that we set a solid ground for the rest of the presentation.
 
-It also requires leadership buy-in to view documentation as a business asset. 
-Because if docs influence behavior — activation, adoption, troubleshooting — then they deserve the same 
-strategic attention as product or marketing.
+The first assumption is that the ideas in this presentation are a mix of strategy, operations, and change 
+management. These three are intertwined, and they're all equally important to turn a vision into a reality.
 
-Finally, this model depends on a willingness to collaborate and make decisions based on evidence. 
-If any of these assumptions don’t hold, the strategy can still work — but we’d adapt the scope and pacing.
+Because of that, the two parts of the presentation naturally overlap. You’ll see some concepts 
+show up in both sections, approached from different angles, because strategic shifts and 
+operational improvements reinforce each other.
+
+A big goal — and honestly, a hope — is a mindset shift toward collective ownership of 
+knowledge. Documentation becomes significantly stronger when everyone who touches the 
+product understands their role in shaping the learning journey.
+
+That’s also why organizational openness and support matter. This includes space to influence 
+adjacent processes, leadership buy-in to create the space for change to happen, and 
+cross-functional willingness to adopt shared ways of working. Without that foundation, 
+we’d be swimming upstream.
+
+And because change of this kind never happens overnight, the ideas build towards a culture of evidence-
+based decision making. That means having the mechanisms to observe real behavior change 
+and use that insight to guide where we focus next.
+
+To get there, we rely on iterative change — experiments, feedback loops, and build-measure-
+learn cycles that help us adapt quickly and move forward with confidence.
+
+Finally, it’s worth saying that none of these ideas are meant to be prescriptive. I’m applying 
+the same mindset I’m advocating for: using the best evidence I have: past 
+experience, industry best practices, and even a user interview — while staying open to refining everything as we learn 
+more together.
 -->
+
 ---
 theme: ./theme
 layout: twocols

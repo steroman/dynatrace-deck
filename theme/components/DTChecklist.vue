@@ -3,6 +3,7 @@
     <div
       v-for="(item, i) in items"
       :key="i"
+      v-click
       class="relative flex items-center gap-2 p-3 rounded-md bg-dt-panel border border-dt-surface-2 overflow-hidden"
     >
       <!-- LEFT GRADIENT BORDER (part of the card edge) -->
@@ -18,6 +19,7 @@
     </div>
   </div>
 </template>
+
 <script setup>
 defineProps({
   items: Array
@@ -34,7 +36,7 @@ defineProps({
 /* Left vertical gradient bar */
 .dt-check-gradient-bar {
   position: absolute;
-  left: 0;
+ left: 0;
   top: 0.25rem;
   bottom: 0.25rem;
   width: 4px;
