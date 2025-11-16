@@ -12,7 +12,6 @@ subtitle: Turning Dynatrace's content into a strategic asset
   >
 </template>
 
-
 <!-- notes:
 Hello everyone — for Task 1, I want to walk you through how we can elevate documentation 
 from a supporting function into a strategic asset that drives activation, adoption, 
@@ -21,13 +20,10 @@ and long-term value for our customers.
 This first part introduces a holistic approach to content strategy — one that aligns all the 
 different teams producing user-facing information, and ensures customers receive a coherent, 
 predictable, and behavior-shaping learning experience.
-
-Let me show you what “great” looks like from the user’s perspective.
 -->
 ---
 theme: ./theme
 layout: default
-# title: Voice of the customer
 ---
 
 <Quote author="A Dynatrace customer">
@@ -35,11 +31,6 @@ layout: default
   They know what information I need, when I need it,  
   and the best way to provide it to me.
 </Quote>
-<!-- 
-> “It's like the folk at Dynatrace can read my mind.
-> They know what information I need, when I need it, and the best format to provide it to me.”
->
-> — A Dynatrace customer -->
 
 <!-- notes:
 This quote captures the vision we’re aiming for: a learning experience that feels effortless, 
@@ -55,16 +46,19 @@ So the question is: what stands between us and being this kind of company every 
 ---
 theme: ./theme
 layout: default
-title: 🧹 Due diligence
+title: Due diligence
+subtitle: Assumptions and "gotchas"
 ---
 
-<CardStack>
-  <Card>Multi-disciplinary approach</Card>
-  <Card>Openness to collaboration</Card>
-  <Card>Leadership buy-in for docs as a business asset</Card>
-  <Card>Ability to influence</Card>
-  <Card>Evidence-based experimentation</Card>
-</CardStack>
+<DTChecklist :items="[
+  { icon: '✅', title: 'Multi-disciplinary approach', iconSize: 'sm' },
+  { icon: '✅', title: 'Openness to collaboration', iconSize: 'sm' },
+  { icon: '✅', title: 'Leadership buy-in for docs as a business asset', iconSize: 'sm' },
+  { icon: '✅', title: 'Ability to influence', iconSize: 'sm' },
+  { icon: '✅', title: 'Evidence-based experimentation', iconSize: 'sm' },
+  { icon: '✅', title: 'Add sixth card here', iconSize: 'sm' }
+]" />
+
 
 <!-- notes:
 Before proposing a strategy, it’s important to be explicit about the assumptions behind it. 
@@ -102,7 +96,6 @@ rightTitle: Org perspective
     <li>⬇️ Low feature discovery</li>
   </ul>
 </template>
-
 
 <!-- notes:
 Users often struggle to find what they need, or they find information that doesn’t fully match 
@@ -161,17 +154,11 @@ The contrast between these two futures shows why a new approach is worth investi
 -->
 ---
 theme: ./theme
-layout: center
+layout: cover
 transition: fade
+title: Mission
+subtitle: Serve users with relevant, trustworthy, behavior-shaping content, fully aligned with business goals, treated as a first-class product asset, and supported by evidence-based decisions and cross-functional influence.
 ---
-
-## Mission
-
-<v-clicks>
-<strong>Serve users</strong> with <strong>relevant, trustworthy, behavior-shaping content</strong>,  
-fully aligned with business goals, treated as a <strong>first-class product asset</strong>,  
-and supported by <strong>evidence-based decisions</strong> and <strong>cross-functional influence</strong>.
-</v-clicks>
 
 <!-- notes:
 Our mission is to serve users with content that actually guides their behavior and helps them succeed.
@@ -200,7 +187,7 @@ title: Solution overview
 
 <!-- notes:
 These five pillars form the backbone of a holistic documentation strategy.
-They’re presented linearly here, but in reality, they reinforce each other.
+They’re presented linearly here, but in reality, they depend on each other and are not executed in this order.
 A cross-functional team gives us shared ownership.
 Mapping user journeys clarifies what content is needed and when.
 Measurement helps us focus on what drives behavior.
@@ -209,30 +196,21 @@ And shifting knowledge left ensures content work starts early and is never an af
 -->
 ---
 theme: ./theme
-layout: center
+layout: step
+title: Build a cross-functional team
 transition: fade
 ---
 
-<div class="step-nav mb-8">
-  <div class="flex justify-between w-full max-w-md mx-auto">
-    <div class="step active">1</div>
-    <div class="step">2</div>
-    <div class="step">3</div>
-    <div class="step">4</div>
-    <div class="step">5</div>
-  </div>
-</div>
+<template #step-nav>
+  <DTWizardNav :count="5" :active="1" />
+</template>
 
-## Build a cross-functional team
-
-<div class="grid grid-cols-2 gap-8 mt-6 text-center">
-
-  <div class="p-6 border rounded-2xl shadow"><div class="text-4xl">🤝</div><div class="mt-2 font-semibold">Shared storytelling</div></div>
-  <div class="p-6 border rounded-2xl shadow"><div class="text-4xl">🏛️</div><div class="mt-2 font-semibold">Content council</div></div>
-  <div class="p-6 border rounded-2xl shadow"><div class="text-4xl">🧩</div><div class="mt-2 font-semibold">Role clarity</div></div>
-  <div class="p-6 border rounded-2xl shadow"><div class="text-4xl">🔄</div><div class="mt-2 font-semibold">Continuous feedback</div></div>
-
-</div>
+<DTCardGrid :items="[
+  { icon: '🤝', title: 'Shared storytelling', size: 'md' },
+  { icon: '🏛️', title: 'Content council', size: 'md' },
+  { icon: '🧩', title: 'Role clarity', size: 'md' },
+  { icon: '🔄', title: 'Continuous feedback', size: 'md' }
+]" />
 
 <!-- notes:
 Today, every team produces content — marketing, PMM, docs, support, sales, engineering — 
@@ -244,36 +222,28 @@ Not a “committee for the sake of meetings,” but a working team aligned aroun
 
 This group defines what content must exist for each stage, who owns it, and how it connects.  
 They share signals from their areas, test improvements together, 
-and help spot content needs much earlier in the product lifecycle.
+and help detect content needs by being the voice of the user in their respective area/stage.
 
 This structure creates shared ownership and prevents misalignment long before it reaches users.
 -->
 ---
 theme: ./theme
-layout: center
+layout: step
 transition: fade
+title: Map content to the user journeys
 ---
 
-<div class="step-nav mb-8">
-  <div class="flex justify-between w-full max-w-md mx-auto">
-    <div class="step">1</div>
-    <div class="step active">2</div>
-    <div class="step">3</div>
-    <div class="step">4</div>
-    <div class="step">5</div>
-  </div>
-</div>
+<template #step-nav>
+  <DTWizardNav :count="5" :active="2" />
+</template>
 
-## Map content to the user journeys
+<DTCardGrid :items="[
+  { icon: '🗺️', title: 'Map workflows' },
+  { icon: '📦', title: 'Define deliverables' },
+  { icon: '🤝', title: 'Test in context' },
+  { icon: '🔄', title: 'Assess increments' }
+]" />
 
-<div class="grid grid-cols-2 gap-8 mt-6 text-center">
-
-  <div class="p-6 border rounded-2xl shadow"><div class="text-4xl">🗺️</div><div class="mt-2 font-semibold">Map workflows</div></div>
-  <div class="p-6 border rounded-2xl shadow"><div class="text-4xl">📦</div><div class="mt-2 font-semibold">Define deliverables</div></div>
-  <div class="p-6 border rounded-2xl shadow"><div class="text-4xl">🤝</div><div class="mt-2 font-semibold">Test in context</div></div>
-  <div class="p-6 border rounded-2xl shadow"><div class="text-4xl">🔄</div><div class="mt-2 font-semibold">Assess increments</div></div>
-
-</div>
 
 <!-- notes:
 Mapping user journeys helps us understand what users are trying to accomplish and what information 
@@ -287,55 +257,45 @@ We then validate the content in real context, not as standalone pieces.
 Finally, each new increment is assessed as a delta to the journey map. 
 This ensures content evolves in sync with the product and always supports behavior.
 -->
+
 ---
 theme: ./theme
-layout: center
+layout: step
 transition: fade
+title: Measure what matters
 ---
 
-<div class="step-nav mb-8">
-  <div class="flex justify-between w-full max-w-md mx-auto">
-    <div class="step">1</div>
-    <div class="step">2</div>
-    <div class="step active">3</div>
-    <div class="step">4</div>
-    <div class="step">5</div>
-  </div>
-</div>
+<template #step-nav>
+  <DTWizardNav :count="5" :active="3" />
+</template>
 
-## Measure what matters
-
-<div class="grid grid-cols-3 gap-4 mt-6 text-xs">
-
-<div class="border rounded-2xl p-3 shadow">
-<h4 class="font-bold mb-2 text-blue-600">Customer outcomes</h4>
-<ul class="list-none space-y-1">
-<li>⚡ Faster time-to-value</li>
-<li>🚀 Higher task completion</li>
-<li>🧭 Less friction</li>
-</ul>
-</div>
-
-<div class="border rounded-2xl p-3 shadow">
-<h4 class="font-bold mb-2 text-blue-600">Business impact</h4>
-<ul class="list-none space-y-1">
-<li>📈 Feature adoption uplift</li>
-<li>💬 Case deflection</li>
-<li>🔧 More self-serve troubleshooting</li>
-<li>🤖 Efficiency gains</li>
-</ul>
-</div>
-
-<div class="border rounded-2xl p-3 shadow">
-<h4 class="font-bold mb-2 text-blue-600">Operational efficiency</h4>
-<ul class="list-none space-y-1">
-<li>📉 Lower SME dependency</li>
-<li>⏱️ Faster idea-to-doc cycle</li>
-<li>🤝 Standards adherence</li>
-</ul>
-</div>
-
-</div>
+<DTCardGrid :items="[
+  {
+    title: 'Customer outcomes',
+    body: [
+      '⚡ Faster time-to-value',
+      '🚀 Higher task completion',
+      '🧭 Less friction'
+    ]
+  },
+  {
+    title: 'Business impact',
+    body: [
+      '📈 Feature adoption uplift',
+      '💬 Case deflection',
+      '🔧 More self-serve troubleshooting',
+      '🤖 Efficiency gains'
+    ]
+  },
+  {
+    title: 'Operational efficiency',
+    body: [
+      '📉 Lower SME dependency',
+      '⏱️ Faster idea-to-doc cycle',
+      '🤝 Standards adherence'
+    ]
+  }
+]" />
 
 <!-- notes:
 To know whether content is working, we focus on outcomes, not engagement.
@@ -351,30 +311,24 @@ and how consistently we follow standards.
 
 These metrics create feedback loops that guide improvement.
 -->
+
 ---
 theme: ./theme
-layout: center
+layout: step
 transition: fade
+title: Define a process
 ---
 
-<div class="step-nav mb-8">
-  <div class="flex justify-between w-full max-w-md mx-auto">
-    <div class="step">1</div>
-    <div class="step">2</div>
-    <div class="step">3</div>
-    <div class="step active">4</div>
-    <div class="step">5</div>
-  </div>
-</div>
+<template #step-nav>
+  <DTWizardNav :count="5" :active="4" />
+</template>
 
-## Define a process
-
-<div class="grid grid-cols-2 gap-4 mt-6 text-sm">
-<div class="border rounded-2xl p-4 shadow">🧱 <strong>Tiering & ownership</strong></div>
-<div class="border rounded-2xl p-4 shadow">⚙️ <strong>Automation & triggers</strong></div>
-<div class="border rounded-2xl p-4 shadow">🔄 <strong>Lifecycle governance</strong></div>
-<div class="border rounded-2xl p-4 shadow">🚀 <strong>Pilot → Learn → Scale</strong></div>
-</div>
+<DTCardGrid :items="[
+  { icon: '🧱', title: 'Tiering & ownership' },
+  { icon: '⚙️', title: 'Automation & triggers' },
+  { icon: '🔄', title: 'Lifecycle governance' },
+  { icon: '🚀', title: 'Pilot → Learn → Scale' }
+]" />
 
 <!-- notes:
 Defining process doesn’t mean adding bureaucracy — it means creating predictability.
@@ -389,30 +343,25 @@ This reduces staleness dramatically.
 And because every organization is different, we start with a small pilot, 
 test the process in one product area, and refine before scaling.
 -->
+
+
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
+title: Shift content left
 ---
 
-<div class="step-nav mb-8">
-  <div class="flex justify-between w-full max-w-md mx-auto">
-    <div class="step">1</div>
-    <div class="step">2</div>
-    <div class="step">3</div>
-    <div class="step">4</div>
-    <div class="step active">5</div>
-  </div>
-</div>
+<template #step-nav>
+  <DTWizardNav :count="5" :active="5" />
+</template>
 
-## Shift content left
-
-<div class="grid grid-cols-2 gap-4 mt-6 text-sm">
-<div class="border rounded-2xl p-4 shadow">⏱️ <strong>Start earlier</strong></div>
-<div class="border rounded-2xl p-4 shadow">📚 <strong>Shared responsibility</strong></div>
-<div class="border rounded-2xl p-4 shadow">⚙️ <strong>Standards + tooling</strong></div>
-<div class="border rounded-2xl p-4 shadow col-span-2">🌱 <strong>Culture change</strong></div>
-</div>
+<DTCardGrid :items="[
+  { icon: '⏱️', title: 'Start earlier' },
+  { icon: '📚', title: 'Shared responsibility' },
+  { icon: '⚙️', title: 'Standards + tooling' },
+  { icon: '🌱', title: 'Culture change', size: 'lg' }
+]" />
 
 <!-- notes:
 Shifting content left means surfacing information needs earlier in the development cycle.
@@ -425,21 +374,21 @@ Standards and tooling make contribution easy and reduce friction.
 Over time, this creates a cultural shift: knowledge becomes embedded in how the product is built, 
 not something added afterward.
 -->
+
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
+title: Next steps
 ---
 
-## Next steps
-
-<div class="grid grid-cols-3 gap-4 mt-6 text-sm">
-<div class="border rounded-2xl p-4 shadow">🎯 <strong>Define success</strong></div>
-<div class="border rounded-2xl p-4 shadow">🎓 <strong>Enable contributors</strong></div>
-<div class="border rounded-2xl p-4 shadow">🔍 <strong>Pilot a workflow</strong></div>
-<div class="border rounded-2xl p-4 shadow">📊 <strong>Improve visibility</strong></div>
-<div class="border rounded-2xl p-4 shadow col-span-2">🚀 <strong>Learn → refine → scale</strong></div>
-</div>
+<DTChecklist :items="[
+  { title: 'Define success' },
+  { title: 'Enable contributors' },
+  { title: 'Pilot a workflow' },
+  { title: 'Improve visibility' },
+  { title: 'Learn → refine → scale' }
+]" />
 
 <!-- notes:
 To bring this to life, we start simple.
@@ -454,15 +403,14 @@ This sets the foundation for Task 2 — where we look at how to modernize the op
 that makes this strategy sustainable.
 -->
 
+
 ---
 theme: ./theme
-layout: center
+layout: cover
 transition: fade
-class: text-center
+title: Part 2
+subtitle: Modernizing the content lifecycle
 ---
-
-# Part 2  
-## Modernizing the content lifecycle
 
 <!-- notes:
 In Task 1, we focused on rethinking documentation strategically. 
@@ -474,13 +422,11 @@ understanding where friction lives, and transitioning to a system that scales wi
 -->
 ---
 theme: ./theme
-layout: center
+layout: cover
 transition: fade
-class: text-center
+title: Mission
+subtitle: Create a content system that focuses our effort where it matters, guided by clear priorities, shared standards, and scalable workflows, so that documentation keeps pace with the business and amplifies its impact.
 ---
-
-# Mission  
-## Velocity and quality at scale
 
 <!-- notes:
 The mission behind modernizing the lifecycle is straightforward: 
@@ -490,9 +436,10 @@ and ensuring that PMs and engineers know exactly what inputs the docs team needs
 A modern lifecycle gives us predictable flow, strong quality standards, 
 and content that keeps up with the pace of change.
 -->
+
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
 class: text-center
 ---
@@ -514,21 +461,20 @@ These assumptions shape the whole approach.
 -->
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
-class: text-center
 ---
 
-# What success looks like
+<Quote author="CPO">
+Documentation is aligned with business outcomes and drives product adoption, reduces support workload, and makes users happy.</Quote>
 
-> “Documentation is predictable, scalable, and aligned with business outcomes.”  
-<small>— Leadership</small>
+<Quote author="Information Developer">
+I spend most of my time on things that matter and I feel a sense of ownership and purpose.
+</Quote>
 
-> “I finally spend most of my time writing.”  
-<small>— Writer</small>
-
-> “I know exactly what’s expected of me and how to contribute.”  
-<small>— PM</small>
+<Quote author="Product Manager">
+I see documentation as a core product pillar and I know exactly what my role is in taking it there.
+</Quote>
 
 <!-- notes:
 Success looks different for different people.
@@ -539,7 +485,7 @@ These perspectives reflect the cultural and operational shift we want to create.
 -->
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
 class: text-center
 ---
@@ -561,7 +507,7 @@ to clarity, to operational strength, to measurement, and finally to a safe, smal
 -->
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
 class: text-center
 ---
@@ -581,7 +527,7 @@ Evaluating the system reveals where friction lives and where improvements will h
 -->
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
 class: text-center
 ---
@@ -599,7 +545,7 @@ This step sets the stage for meaningful prioritization.
 -->
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
 class: text-center
 ---
@@ -617,7 +563,7 @@ This creates clarity for writers and PMs and helps everyone understand why some 
 -->
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
 class: text-center
 ---
@@ -634,7 +580,7 @@ Training contributors on workflows and templates also reduces friction and speed
 -->
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
 class: text-center
 ---
@@ -653,7 +599,7 @@ Strengthening operations reduces rework and creates a healthier, more predictabl
 -->
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
 class: text-center
 ---
@@ -671,7 +617,7 @@ and where to invest next so the system keeps evolving in the right direction.
 -->
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
 class: text-center
 ---
@@ -688,7 +634,7 @@ This approach builds trust and minimizes risk during the transition.
 -->
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
 class: text-center
 ---
@@ -707,7 +653,7 @@ These ideas can spark future conversations after the lifecycle evaluation begins
 -->
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
 class: text-center
 ---
@@ -725,7 +671,7 @@ Once those are in place, AI becomes a powerful multiplier that makes teams faste
 -->
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
 class: text-center
 ---
@@ -743,7 +689,7 @@ Happy to share any of these references afterward.
 -->
 ---
 theme: ./theme
-layout: center
+layout: default
 transition: fade
 class: text-center
 ---

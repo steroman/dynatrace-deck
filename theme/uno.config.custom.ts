@@ -150,7 +150,14 @@ const theme = {
       hover:border-dt-blue/40
       hover:shadow-lg
     `,
+'dt-card-dense-panel': [
+  'p-3',                // smaller padding
+  'min-h-[6rem]',       // shorter panel height
+  'space-y-1',          // tighter spacing between children
+].join(' '),
 
+'dt-card-dense-ribbon': 'h-2',          // smaller ribbon
+'dt-card-dense-icon': 'text-xl',        // smaller icons
     /* -----------------------------------------
        YOUR ORIGINAL GLOBAL SHORTCUTS
     ----------------------------------------- */

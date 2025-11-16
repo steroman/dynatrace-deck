@@ -8,26 +8,18 @@
         <h2 class="text-4xl font-medium mb-4">
           {{ $frontmatter.title }}
         </h2>
-        <p v-if="$frontmatter.subtitle" class="text-xl text-dt-text-muted">
-          {{ $frontmatter.subtitle }}
-        </p>
       </header>
 
-      <!-- Wizard -->
       <div class="mt-2">
         <slot name="step-nav" />
       </div>
 
     </div>
 
-    <!-- BODY (independent from header height) -->
+    <!-- BODY -->
     <div class="flex-1 w-full max-w-6xl mx-auto flex justify-center">
       <slot />
     </div>
 
   </div>
 </template>
-
-<script setup>
-// nothing here
-</script>
