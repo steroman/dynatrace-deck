@@ -4,6 +4,7 @@ layout: cover
 transition: fade
 title: Welcome
 ---
+
 <template #logo>
   <img
     src="./assets/logo/Dynatrace_Logo_color_negative_vertical.svg"
