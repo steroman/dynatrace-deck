@@ -339,7 +339,7 @@ This is also a tool to validate the content in real context, not as standalone p
 ---
 layout: image-pane
 title: Workflow visualization
-image: /top-performer-comms-journey-mapping.png
+image: ./top-performer-comms-journey-mapping.png
 # imageWidth: max-w-3xl
 imageHeight: max-h-[28vh]
 # credit: "Source: Stefano Romanelli"
