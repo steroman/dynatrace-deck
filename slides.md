@@ -328,16 +328,12 @@ title: Map content to the user journeys
 ]" />
 
 <!-- notes:
-Mapping user journeys helps us understand what users are trying to accomplish and what information 
-they need at each step. We partner with UX, design, and product to chart key workflows like 
-Observe, Ingest, Secure, and Deliver.
+Mapping content to user journeys helps us understand what users are trying to accomplish and what information 
+they need at each step. We partner with UX, design, and product to define core workflows like Observe, Ingest, Secure, and Deliver.
 
-Once we understand the journey, we identify the content required at each stage — 
-and which deliverables are mandatory for each release tier.
+Once we understand the journey, we identify the content required at each stage, and which deliverables are mandatory for each release.
 
-We then validate the content in real context, not as standalone pieces. 
-Finally, each new increment is assessed as a delta to the journey map. 
-This ensures content evolves in sync with the product and always supports behavior.
+This is also a tool to validate the content in real context, not as standalone pieces. The final goal of this process is that teams start seeing new increments as a deltas to the journey map. This ensures content evolves in sync with the product and always supports behavior.
 -->
 
 ---
@@ -465,34 +461,6 @@ This also builds shared responsibility: everyone contributes
 Standards and tooling make contribution easy and reduce friction. 
 Over time, this creates a cultural shift: knowledge becomes embedded in how the product is built, 
 not something added afterward. But we also develop a culture of lean experimentation and of becoming evidence-driven.
--->
-
----
-theme: ./theme
-layout: default
-transition: fade
-title: Next steps
----
-
-<DTChecklist :items="[
-  { title: 'Define success' },
-  { title: 'Enable contributors' },
-  { title: 'Robust analytics' },
-  { title: 'Feedback loops (build > measure > learn)' },
-  { title: 'Pilot a workflow' }
-]" />
-
-<!-- notes:
-To bring this to life, we start simple.
-
-First, define success clearly so every team knows what “good” looks like.
-Second, enable contributors through training and lightweight standards.
-Then run a small pilot to validate journey mapping, tiering, and governance.
-Build visibility with dashboards so teams see the impact early.
-And finally, refine and scale the approach once we’ve proven it works.
-
-This sets the foundation for Task 2 — where we look at how to modernize the operational lifecycle 
-that makes this strategy sustainable.
 -->
 
 ---
@@ -1076,7 +1044,7 @@ Think of this like an IDEAs bucket in GIST, where you can score them and priorit
 ---
 layout: thankyou
 title: Thank you!
-contactQR: /linkedin-qr.png
+contactQR: ./linkedin-qr.png
 repoUrl: https://github.com/steroman/dynatrace-deck
 resources:
   - label: "Automating documentation maintenance workflow (Dimple Poojary, WTD)"
