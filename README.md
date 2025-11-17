@@ -5,8 +5,6 @@ This repository hosts the Slidev deck used for the **Product Manager, Informatio
 🌐 **Live presentation deck:**  
 https://steroman.github.io/dynatrace-deck/
 
----
-
 ## 📚 About this deck
 
 This presentation was built with **[Slidev](https://sli.dev)**, a Markdown-based slide framework that enables:
@@ -22,8 +20,6 @@ The goal of this deck is to present a cohesive, end-to-end approach to:
 
 - **Task 1:** Redesigning the Dynatrace content strategy & collaboration model  
 - **Task 2:** Modernizing and operationalizing the content lifecycle  
-
----
 
 ## 📁 Repository structure
 
@@ -50,8 +46,6 @@ The goal of this deck is to present a cohesive, end-to-end approach to:
   - Components used across slides  
   - Global colors and typography aligned with your brand  
 - **`uno.config.ts`** — All UnoCSS shortcuts used across slides (e.g., `step`, `card`, `section`).
-
----
 
 ## ▶️ Run locally
 
