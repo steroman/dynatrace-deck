@@ -7,7 +7,7 @@ title: Welcome
 
 <template #logo>
   <img
-    src="./logo/Dynatrace_Logo_color_negative_vertical.svg"
+    src="/logo/Dynatrace_Logo_color_negative_vertical.svg"
     class="w-20"
   >
 </template>
@@ -100,7 +100,7 @@ subtitle: Turning Dynatrace's content into a strategic asset
 
 <template #logo>
   <img
-    src="./logo/Dynatrace_Logo_color_negative_vertical.svg"
+    src="/logo/Dynatrace_Logo_color_negative_vertical.svg"
     class="w-20"
   >
 </template>
@@ -501,7 +501,7 @@ subtitle: Building the foundation for sustainable content operations at scale
 
 <template #logo>
   <img
-    src="./logo/Dynatrace_Logo_color_negative_vertical.svg"
+    src="/logo/Dynatrace_Logo_color_negative_vertical.svg"
     class="w-20"
   >
 </template>
