@@ -151,8 +151,9 @@ rightTitle: Org perspective
   <DTCard size="md">
     <ul class="space-y-2 text-left">
       <li>🔍 Hard to discover the right information</li>
-      <li>🤝 Unclear or inconsistent content</li>
-      <li>📉 Reliance on support to complete tasks</li>
+      <li>🤔 Unclear or inconsistent content</li>
+      <li>🎟️ Reliance on support to complete tasks</li>
+      <li>🤬 Frustration</li>
     </ul>
   </DTCard>
 </template>
@@ -160,17 +161,18 @@ rightTitle: Org perspective
 <template #right>
   <DTCard size="md">
     <ul class="space-y-2 text-left">
-      <li>🛢️ No narrative continuity across team</li>
-      <li>⚙️ Content and business goals misaligned</li>
-      <li>📊 More cases or drop-off</li>
+      <li>🛢️ No narrative continuity across journey</li>
+      <li>⚙️ Business goals misalignment</li>
+      <li>💸 Lack of self serve (support, drop-offs, hand-holding)</li>
       <li>⬇️ Low feature discovery</li>
+      <li>💨 Churning</li>
     </ul>
   </DTCard>
 </template>
 
 <!-- notes:
 Users often struggle to find what they need, or they find information that doesn’t fully match 
-how the product behaves today. That forces them into support channels and slows down their journey.
+how the product behaves today. That forces them into support channels and slows down their journey, which ultimately causes frustration, 
 
 Internally, the issue is fragmentation. Marketing tells one story, docs tell another, 
 and support often ends up creating ad-hoc material to fill gaps.  
@@ -179,52 +181,58 @@ Everyone produces content, but no one is orchestrating it.
 This dual perspective — user pain and organizational misalignment — creates the perfect storm 
 for friction, support escalations, and inconsistent learning experiences.
 -->
+
 ---
 theme: ./theme
-layout: twocols
+layout: default
 transition: fade
 title: Possible futures
-leftTitle: No action
-rightTitle: Action
+subtitle: If we take no action
 ---
 
-<template #left>
-  <DTCard size="md">
-    <v-clicks>
-      <ul class="space-y-2 text-left">
-        <li>🧱 Growing content debt</li>
-        <li>💔 Declining user trust</li>
-        <li>💸 Rising support costs</li>
-      </ul>
-    </v-clicks>
-  </DTCard>
-</template>
+<DTChecklist :items="[
+  { title: 'Growing content debt' },
+  { title: 'Declining user trust' },
+  { title: 'Rising support costs' },
+  { title: 'Low morale' }
+]" />
 
-<template #right>
-  <DTCard size="md">
-    <v-clicks>
-      <ul class="space-y-2 text-left">
-        <li>🚀 Knowledge accelerates product growth</li>
-        <li>🤝 Users self-serve confidently</li>
-        <li>💡 Documentation amplifies adoption</li>
-      </ul>
-    </v-clicks>
-  </DTCard>
-</template>
+<!--  notes:
+We've already touched on some of these, but it’s worth pausing to look at the full picture of what happens if we don’t act strategically on our content.
+
+Content debt keeps piling up faster than we can manage.
+Writers spend more time patching issues than improving the experience.
+As inconsistencies grow, users lose trust and start relying more on support to get through basic tasks.
+And as support volume rises, the product becomes harder to adopt and harder to scale.
+
+This is the trajectory that we may be seeing if we stay reactive.
+-->
+---
+theme: ./theme
+layout: default
+transition: fade
+title: Possible futures
+subtitle: If we act
+class: text-center
+---
+
+<DTChecklist :items="[
+  { title: 'Knowledge accelerates product growth' },
+  { title: 'Users self-serve confidently' },
+  { title: 'Documentation amplifies adoption' },
+  { title: 'Positive bottom line' }
+]" />
 
 <!-- notes:
-This slide creates the tension and the opportunity.
 
-If we don’t act, content debt keeps growing.  
-Writers spend more time patching than improving.  
-Users lose confidence in the information.  
-Support costs go up, and product adoption slows down.
+But when we take a strategic, operational approach, the picture changes completely.
 
-If we do act, documentation becomes a growth engine. 
-It reduces friction, accelerates adoption, and improves time-to-value. 
-It also empowers users to self-serve more confidently — which is essential for a complex platform like Dynatrace.
+Documentation becomes a growth lever instead of a bottleneck.
+Clear, reliable content reduces friction across the whole journey and helps users self-serve with confidence.
+And when users can move faster, product adoption increases, onboarding becomes smoother, and the cost-to-serve goes down.
 
-The contrast between these two futures shows why a new approach is worth investing in.
+This is the opportunity: by strengthening how we operate, we turn documentation into a multiplier for the entire product ecosystem.
+
 -->
 ---
 theme: ./theme
@@ -314,10 +322,9 @@ title: Map content to the user journeys
 <DTCardGrid :items="[
   { icon: '🗺️', title: 'Map workflows' },
   { icon: '📦', title: 'Define deliverables' },
-  { icon: '🤝', title: 'Test in context' },
-  { icon: '🔄', title: 'Assess increments' }
+  { icon: '🕸️', title: 'Visible relationships' },
+  { icon: '🔄', title: 'Increments are deltas' }
 ]" />
-
 
 <!-- notes:
 Mapping user journeys helps us understand what users are trying to accomplish and what information 
@@ -331,6 +338,16 @@ We then validate the content in real context, not as standalone pieces.
 Finally, each new increment is assessed as a delta to the journey map. 
 This ensures content evolves in sync with the product and always supports behavior.
 -->
+
+---
+layout: image-pane
+title: Workflow visualization
+image: ./assets/top-performer-comms-journey-mapping.png
+# imageWidth: max-w-3xl
+imageHeight: max-h-[28vh]
+# credit: "Source: Stefano Romanelli"
+# creditUrl: "https://example.com"
+---
 
 ---
 theme: ./theme
@@ -401,7 +418,7 @@ title: Define a process
   { icon: '🧱', title: 'Tiering & ownership' },
   { icon: '⚙️', title: 'Automation & triggers' },
   { icon: '🔄', title: 'Lifecycle governance' },
-  { icon: '🚀', title: 'Pilot → Learn → Scale' }
+  { icon: '🚀', title: 'Optimize all workstreams' }
 ]" />
 
 <!-- notes:
@@ -446,7 +463,7 @@ This also builds shared responsibility: everyone contributes
 
 Standards and tooling make contribution easy and reduce friction. 
 Over time, this creates a cultural shift: knowledge becomes embedded in how the product is built, 
-not something added afterward.
+not something added afterward. But we also develop a culture of lean experimentation and of becoming evidence-driven.
 -->
 
 ---
@@ -459,9 +476,9 @@ title: Next steps
 <DTChecklist :items="[
   { title: 'Define success' },
   { title: 'Enable contributors' },
-  { title: 'Pilot a workflow' },
-  { title: 'Improve visibility' },
-  { title: 'Learn → refine → scale' }
+  { title: 'Robust analytics' },
+  { title: 'Feedback loops (build > measure > learn)' },
+  { title: 'Pilot a workflow' }
 ]" />
 
 <!-- notes:
@@ -476,6 +493,26 @@ And finally, refine and scale the approach once we’ve proven it works.
 This sets the foundation for Task 2 — where we look at how to modernize the operational lifecycle 
 that makes this strategy sustainable.
 -->
+
+---
+theme: ./theme
+layout: image-checklist
+transition: fade
+title: Next steps
+image: ./assets/mindset-shift.jpg
+imageWidth: max-w-xl
+imageHeight: max-h-[45vh]
+credit: "Stephan Delbos"
+# creditUrl: "https://example.com"
+---
+
+<DTChecklist :items="[
+  { title: 'Define success' },
+  { title: 'Enable contributors' },
+  { title: 'Robust analytics' },
+  { title: 'Feedback loops (build > measure > learn)' },
+  { title: 'Lean experimentation' }
+]" />
 
 ---
 theme: ./theme
@@ -762,6 +799,26 @@ What matters is that both lanes use clear scoring standards.
 They align everyone on what’s important, on what moves the needle, and—equally important—on what we intentionally deprioritize.
 Prioritization is not only about choosing what to do, but about having shared principles to guide what we say no to when things get ambiguous.
 -->
+
+---
+theme: ./theme
+layout: image-pane
+transition: fade
+title: Value lens for prioritization
+image: ./assets/adjusted-user-vs-business-impact-matrix.jpg
+credit: "Source: Itamar Gilad"
+imageHeight: max-h-[20vh]
+---
+
+<!-- notes:
+The exact prioritization framework we use matters far less than the alignment behind it.
+What really matters is having a shared understanding of what “good” looks like.
+
+This matrix is an example, but I do believe that it gives visual clarity around where efforts should be spent: in prioritizing the work that creates the highest value for both the user and the business.
+
+Recognizing the work that doesn't add value is just as important, because its all work that adds noise. So yeah, it's also about saying no.
+-->
+
 ---
 theme: ./theme
 layout: default
