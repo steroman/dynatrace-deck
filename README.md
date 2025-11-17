@@ -1,4 +1,4 @@
-# Dynatrace Documentation Strategy & Lifecycle — Slide Deck
+# Dynatrace slide deck
 
 This repository hosts the Slidev deck used for the **Product Manager, Information Development** workshop presentation.
 
