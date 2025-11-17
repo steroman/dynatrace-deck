@@ -10,16 +10,16 @@ const theme = {
          Dynatrace DT Flow font family (full set)
          ======================================== */
 
-      @font-face { font-family: "DT Flow"; src: url("/assets/fonts/DTFlow-Hairline.otf"); font-weight: 100; }
-      @font-face { font-family: "DT Flow"; src: url("/assets/fonts/DTFlow-Thin.otf"); font-weight: 200; }
-      @font-face { font-family: "DT Flow"; src: url("/assets/fonts/DTFlow-Extralight.otf"); font-weight: 250; }
-      @font-face { font-family: "DT Flow"; src: url("/assets/fonts/DTFlow-Light.otf"); font-weight: 300; }
-      @font-face { font-family: "DT Flow"; src: url("/assets/fonts/DTFlow-Regular.otf"); font-weight: 400; }
-      @font-face { font-family: "DT Flow"; src: url("/assets/fonts/DTFlow-Medium.otf"); font-weight: 500; }
-      @font-face { font-family: "DT Flow"; src: url("/assets/fonts/DTFlow-Semibold.otf"); font-weight: 600; }
-      @font-face { font-family: "DT Flow"; src: url("/assets/fonts/DTFlow-Bold.otf"); font-weight: 700; }
-      @font-face { font-family: "DT Flow"; src: url("/assets/fonts/DTFlow-Extrabold.otf"); font-weight: 800; }
-      @font-face { font-family: "DT Flow"; src: url("/assets/fonts/DTFlow-Heavy.otf"); font-weight: 900; }
+      @font-face { font-family: "DT Flow"; src: url("/fonts/DTFlow-Hairline.otf"); font-weight: 100; }
+      @font-face { font-family: "DT Flow"; src: url("/fonts/DTFlow-Thin.otf"); font-weight: 200; }
+      @font-face { font-family: "DT Flow"; src: url("/fonts/DTFlow-Extralight.otf"); font-weight: 250; }
+      @font-face { font-family: "DT Flow"; src: url("/fonts/DTFlow-Light.otf"); font-weight: 300; }
+      @font-face { font-family: "DT Flow"; src: url("/fonts/DTFlow-Regular.otf"); font-weight: 400; }
+      @font-face { font-family: "DT Flow"; src: url("/fonts/DTFlow-Medium.otf"); font-weight: 500; }
+      @font-face { font-family: "DT Flow"; src: url("/fonts/DTFlow-Semibold.otf"); font-weight: 600; }
+      @font-face { font-family: "DT Flow"; src: url("/fonts/DTFlow-Bold.otf"); font-weight: 700; }
+      @font-face { font-family: "DT Flow"; src: url("/fonts/DTFlow-Extrabold.otf"); font-weight: 800; }
+      @font-face { font-family: "DT Flow"; src: url("/fonts/DTFlow-Heavy.otf"); font-weight: 900; }
 
       :root {
         --slidev-font-sans: "DT Flow", Inter, Arial, sans-serif;
