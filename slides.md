@@ -7,7 +7,7 @@ title: Welcome
 
 <template #logo>
   <img
-    src="./public/logo/Dynatrace_Logo_color_negative_vertical.svg"
+    src="/public/logo/Dynatrace_Logo_color_negative_vertical.svg"
     class="w-20"
   >
 </template>
@@ -100,7 +100,7 @@ subtitle: Turning Dynatrace's content into a strategic asset
 
 <template #logo>
   <img
-    src="./public/logo/Dynatrace_Logo_color_negative_vertical.svg"
+    src="/public/logo/Dynatrace_Logo_color_negative_vertical.svg"
     class="w-20"
   >
 </template>
@@ -343,7 +343,7 @@ This ensures content evolves in sync with the product and always supports behavi
 ---
 layout: image-pane
 title: Workflow visualization
-image: ./public/top-performer-comms-journey-mapping.png
+image: /public/top-performer-comms-journey-mapping.png
 # imageWidth: max-w-3xl
 imageHeight: max-h-[28vh]
 # credit: "Source: Stefano Romanelli"
@@ -500,7 +500,7 @@ theme: ./theme
 layout: image-checklist
 transition: fade
 title: Next steps
-image: ./public/mindset-shift.jpg
+image: /public/mindset-shift.jpg
 imageWidth: max-w-xl
 imageHeight: max-h-[45vh]
 credit: "Stephan Delbos"
@@ -533,7 +533,7 @@ subtitle: Building the foundation for sustainable content operations at scale
 
 <template #logo>
   <img
-    src="./public/logo/Dynatrace_Logo_color_negative_vertical.svg"
+    src="/public/logo/Dynatrace_Logo_color_negative_vertical.svg"
     class="w-20"
   >
 </template>
@@ -806,7 +806,7 @@ theme: ./theme
 layout: image-pane
 transition: fade
 title: Value lens for prioritization
-image: ./public/adjusted-user-vs-business-impact-matrix.jpg
+image: /public/adjusted-user-vs-business-impact-matrix.jpg
 credit: "Source: Itamar Gilad"
 imageHeight: max-h-[20vh]
 ---
