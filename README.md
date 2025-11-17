@@ -58,7 +58,7 @@ npm install
 ### 2. Start the local dev server
 
 ```
-npx slidev
+npm slidev
 ```
 
 Slidev will start at `http://localhost:3030` with hot-reload.
