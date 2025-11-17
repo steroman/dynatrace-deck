@@ -105,11 +105,7 @@ subtitle: Turning Dynatrace's content into a strategic asset
   >
 </template>
 
-<!-- notes:
-Hello everyone — for Task 1, I want to walk you through how we can elevate documentation 
-from a supporting function into a strategic asset that drives activation, adoption, 
-and long-term value for our customers.
-
+<!-- 
 This first part introduces a holistic approach to content strategy — one that aligns all the 
 different teams producing user-facing information, and ensures customers receive a coherent, 
 predictable, and behavior-shaping learning experience. -->
@@ -172,15 +168,15 @@ rightTitle: Org perspective
 </template>
 
 <!-- notes:
+
+The status quo can be analyzed from 2 perspective: that of the user, and that of the organization.
+
 Users often struggle to find what they need, or they find information that doesn’t fully match 
 how the product behaves today. That forces them into support channels and slows down their journey, which ultimately causes frustration, 
 
 Internally, the issue is fragmentation. Marketing tells one story, docs tell another, 
 and support often ends up creating ad-hoc material to fill gaps.  
 Everyone produces content, but no one is orchestrating it.
-
-This dual perspective — user pain and organizational misalignment — creates the perfect storm 
-for friction, support escalations, and inconsistent learning experiences.
 -->
 
 ---
@@ -271,11 +267,8 @@ title: Solution strategy
 <!-- notes:
 These five pillars form the backbone of a holistic documentation strategy.
 They’re presented linearly here, but in reality, they depend on each other and are not executed in this order.
-A cross-functional team gives us shared ownership.
-Mapping user journeys clarifies what content is needed and when.
-Measurement helps us focus on what drives behavior.
-Process ensures consistency and scalability.
-And shifting knowledge left ensures content work starts early and is never an afterthought.
+
+But let's look at them one by one...
 -->
 ---
 theme: ./theme
@@ -296,6 +289,7 @@ transition: fade
 ]" />
 
 <!-- notes:
+
 Today, every team produces content — marketing, PMM, docs, support, sales, engineering — 
 but no one orchestrates the full experience.  
 Users feel that fragmentation immediately.
@@ -303,11 +297,10 @@ Users feel that fragmentation immediately.
 So the first step is to build a cross-functional group responsible for shaping a unified narrative.  
 Not a “committee for the sake of meetings,” but a working team aligned around user journeys.
 
-This group defines what content must exist for each stage, who owns it, and how it connects.  
-They share signals from their areas, test improvements together, 
-and help detect content needs by being the voice of the user in their respective area/stage.
+This group defines what content must exist for each stage of the journey, who owns it, and how it all connects.  
+They share learnings from their areas, test improvements together, and help detect content needs by being the voice of the user in their respective area/stage.
 
-This structure creates shared ownership and prevents misalignment long before it reaches users.
+This structure creates shared ownership and creates stronger alignment before content reaches users.
 -->
 ---
 theme: ./theme
@@ -328,10 +321,11 @@ title: Map content to the user journeys
 ]" />
 
 <!-- notes:
-Mapping content to user journeys helps us understand what users are trying to accomplish and what information 
-they need at each step. We partner with UX, design, and product to define core workflows like Observe, Ingest, Secure, and Deliver.
+I've mentioned earlier that understanding users is key. This is why the team built previously must partner with UX research, design, and product to define core workflows like Observe, Ingest, Secure, and Deliver.
 
-Once we understand the journey, we identify the content required at each stage, and which deliverables are mandatory for each release.
+Mapping content to user journeys helps us understand what users are trying to accomplish and what information they need at each step.
+
+Once we understand the journey, we identify the content required at each stage, and which deliverables are mandatory for each release, but also identify knowledge gaps that must be filled.
 
 This is also a tool to validate the content in real context, not as standalone pieces. The final goal of this process is that teams start seeing new increments as a deltas to the journey map. This ensures content evolves in sync with the product and always supports behavior.
 -->
@@ -345,6 +339,8 @@ imageHeight: max-h-[28vh]
 # credit: "Source: Stefano Romanelli"
 # creditUrl: "https://example.com"
 ---
+
+<!-- This is an example of what I have in mind. It's an effort I led while I was at Glovo, and it was the first time cross-functional departments worked together -->
 
 ---
 theme: ./theme
@@ -398,6 +394,9 @@ how often writers depend on SMEs, how long it takes to go from roadmap change to
 and how consistently we follow standards.
 
 These metrics create feedback loops that guide improvement.
+
+This doesn't mean we're no longer interested in page views, bounce rates, and other traditional metrics, but they're a middle layer to understand what works and what doesn't.
+
 -->
 
 ---
@@ -419,19 +418,17 @@ title: Define a process
 ]" />
 
 <!-- notes:
-Defining process doesn’t mean adding bureaucracy — it means creating predictability.
+Defining processes doesn’t mean adding bureaucracy — it means creating predictability.
 
-Tiering tells us what content must be produced for each release level 
-and who is accountable. Automation ensures that roadmap changes trigger content work early, 
-so writers get what they need without chasing information.
+I'd start by defining clear ownership of each content piece and the dependencies needed to create them, so that writers can spend less time hunting for information.
 
-Governance keeps content fresh by treating every product change as a content delta. 
-This reduces staleness dramatically.
+Tiering can be implemented to releases so that the content requirements are clear by tier.
+Automations (like automatic JIRA tasks or slack bots) can be implemented to trigger content creation for everyone or collect information.
 
-And because every organization is different, we start with a small pilot, 
-test the process in one product area, and refine before scaling.
+Governance keeps content fresh by treating every product change as a content delta, which reduces staleness dramatically. Additional staleness checks can also be implemented.
+
+A clear analysis of all the workstreams is also necessary so that they can be optimized and noise reduced.
 -->
-
 
 ---
 theme: ./theme
@@ -452,15 +449,16 @@ title: Shift content left
 ]" />
 
 <!-- notes:
+
+The goal is shifting content left, also thanks to the previous steps.
 Shifting content left means surfacing information needs earlier in the development cycle.
-When writers are involved early, they stop acting as information hunters and become strategic partners.
+When dependencies and inefficiencies are identified earlier, everyone is put in the best position to deliver their best work.
 
-This also builds shared responsibility: everyone contributes 
-— PMs, engineers, designers, support — because content becomes part of the product itself.
+This also builds shared responsibility: everyone must understand their role in delivering quality knowledge that can be a business asset.
 
-Standards and tooling make contribution easy and reduce friction. 
-Over time, this creates a cultural shift: knowledge becomes embedded in how the product is built, 
-not something added afterward. But we also develop a culture of lean experimentation and of becoming evidence-driven.
+Standards and tooling make contribution easy and reduce friction. Over time, this creates a cultural shift: knowledge becomes embedded in how the product is built, 
+not something added afterward.
+
 -->
 
 ---
@@ -470,7 +468,7 @@ transition: fade
 title: Next steps
 image: ./mindset-shift.jpg
 imageWidth: max-w-xl
-imageHeight: max-h-[45vh]
+imageHeight: auto
 credit: "Stephan Delbos"
 # creditUrl: "https://example.com"
 ---
@@ -507,18 +505,16 @@ subtitle: Building the foundation for sustainable content operations at scale
 </template>
 
 <!-- notes:
-For Task 2, we're going to shift from strategy to operations — 
+For Task 2, we're going to shift from strategy to a more tactical approach. 
 specifically, how we modernize the content lifecycle so writers 
 can focus on high-value work, content stays fresh, and end-user 
 experiences continuously improve.
 
 This part outlines how we evaluate the current system, identify 
 bottlenecks, and introduce a scalable, data-informed, and 
-developer-friendly lifecycle model. -->
+contributor-friendly lifecycle model.
 
-<!-- notes:
-In Task 1, we focused on rethinking documentation strategically. 
-Here, we look at the operational backbone that makes that strategy actually work.
+This is the operational backbone that makes a strategy like the one in the previous task possible.
 The reality today is that writers struggle to keep up with product velocity, and content becomes stale quickly.
 That creates risk for users, support, and even LLM accuracy.
 So in this section, I’ll walk you through a practical path for evaluating the current lifecycle, 
@@ -585,7 +581,7 @@ transition: fade
     <ul class="space-y-1 text-sm text-left text-dt-text-muted">
       <li>• Balanced workloads</li>
       <li>• Clear roles</li>
-      <li>• Expectation hygiene</li>
+      <li>• Iteration</li>
     </ul>
   </DTCard>
 
@@ -593,12 +589,10 @@ transition: fade
 </template>
 
 <!-- notes:
-These assumptions guide every decision in this lifecycle.
 Velocity comes from removing friction and giving teams clear processes and tools.
 Quality depends on clear inputs—writers can only deliver great content when they get the right context early.
-Scalability comes from standardization and automation, not from heroics.
+Scalability comes from standardization and automation.
 And sustainability is essential: if workloads or expectations aren’t balanced, the system collapses.
-These assumptions shape the whole approach.
 -->
 ---
 theme: ./theme
@@ -624,13 +618,11 @@ title: What they'll say about us
 
 </div>
 
-
 <!-- notes:
-Success looks different for different people.
+In this case, success is three-folded. There's lot of people that will be come happy once this process improves. So I took the liberty of creating quotes from key stakeholders to show what success will look like for them.
 For leadership, it’s predictability and alignment with business goals.
-For writers, it’s being able to focus on writing instead of chasing inputs or dealing with noise.
+For writers, it’s being able to focus on writing instead of dealing with noise.
 For PMs, it’s clarity: knowing exactly what’s expected and how to provide the right inputs.
-These perspectives reflect the cultural and operational shift we want to create.
 -->
 ---
 theme: ./theme
@@ -676,9 +668,9 @@ title: Analyze the system
 <!-- notes:
 Evaluating the system means observing how work happens.
 
-I start with people: how they collaborate day to day, where they lose time or context, and whether they have the skills and clarity they need to work at their best, and whether their capacity is optimal.
+I start with people: how they collaborate day to day, where they lose time or context, and whether they have the skills and clarity they need to work at their best.
 
-Then I look at process: the real end-to-end workflow, the workstreams competing for attention, where handoffs break, and especially the dependencies between steps. These are the structural dependencies that slow work down — when one part of the system can’t progress because another process, approval, or team isn’t ready. This is where most bottlenecks tend to appear.
+Then I look at process: the real end-to-end workflow, the workstreams competing for attention, where handoffs break, and especially the dependencies between steps. These are the structural dependencies that slow work down — when one part of the system can’t progress because another process, approval, or team isn’t ready. That's when bottlenecks tend to appear.
 
 Then I look at technology: whether the tooling is reliable, whether automation exists where it should, and where it could be improved to increase efficiency.
 
