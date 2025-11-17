@@ -7,7 +7,7 @@ title: Welcome
 
 <template #logo>
   <img
-    src="/logo/Dynatrace_Logo_color_negative_vertical.svg"
+    src="./logo/Dynatrace_Logo_color_negative_vertical.svg"
     class="w-20"
   >
 </template>
@@ -100,7 +100,7 @@ subtitle: Turning Dynatrace's content into a strategic asset
 
 <template #logo>
   <img
-    src="/logo/Dynatrace_Logo_color_negative_vertical.svg"
+    src="./logo/Dynatrace_Logo_color_negative_vertical.svg"
     class="w-20"
   >
 </template>
@@ -468,7 +468,7 @@ theme: ./theme
 layout: image-checklist
 transition: fade
 title: Next steps
-image: /mindset-shift.jpg
+image: ./mindset-shift.jpg
 imageWidth: max-w-xl
 imageHeight: max-h-[45vh]
 credit: "Stephan Delbos"
@@ -501,7 +501,7 @@ subtitle: Building the foundation for sustainable content operations at scale
 
 <template #logo>
   <img
-    src="/logo/Dynatrace_Logo_color_negative_vertical.svg"
+    src="./logo/Dynatrace_Logo_color_negative_vertical.svg"
     class="w-20"
   >
 </template>
@@ -774,7 +774,7 @@ theme: ./theme
 layout: image-pane
 transition: fade
 title: Value lens for prioritization
-image: /adjusted-user-vs-business-impact-matrix.jpg
+image: ./adjusted-user-vs-business-impact-matrix.jpg
 credit: "Source: Itamar Gilad"
 imageHeight: max-h-[20vh]
 ---
